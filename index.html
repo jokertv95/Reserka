@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="css/fontello.css	" />
+    <title>Reserka</title>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3"
+    >
+      <!-- FLEX container -->
+      <div
+        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+      >
+        <!-- LOGO -->
+        <div
+          class="w-fit relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <img src="img/reserka-logo.svg" alt="Logo Reserka" />
+        </div>
+        <!-- MENU ITEMS -->
+        <div class="hidden space-x-6 pt-2 md:flex items-center">
+          <a href="#" class="hover:text-darkGrayishBlue">Sponsors</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Clinical trials</a>
+          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Team</a>
+          <a href="#" class="hover:text-darkGrayishBlue">FAQ</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Contact</a>
+          <!-- BUTTON -->
+          <a
+            href="#"
+            class="hidden md:inline-block p-3 px-6 pt-2 text-white bg-black baseline"
+            >Apply for clinical trial</a
+          >
+        </div>
+
+        <!-- HAMBURGER ICON -->
+
+        <button
+          class="block hamburger md:hidden focus:outline-none"
+          id="menu-btn"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- MOBILE MENU -->
+
+      <div class="md:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#">Sponsors</a>
+          <a href="#">Clinical trials</a>
+          <a href="#">About Us</a>
+          <a href="#">Team</a>
+          <a href="#">FAQ</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+    <div class="md:w-[1920px] h-[700px] bg-no-repeat bg-cover background">
+      <!-- HERO -->
+
+      <section id="hero" class="md:w-[1920px] md:h-[1000px]">
+        <!-- FLEX CONTAINER -->
+        <div
+          class="container flex flex-row mx-auto relative h-1/2 md:space-y-0"
+        >
+          <!-- TEXT IN LEFT SIDE -->
+          <div
+            class="flex mb-32 absolute top-1/4 inset-x-0 bottom-0 flex-col w-[1000px]"
+          >
+            <h1 class="max-w-md text-4xl text-center md:text-7xl md:text-left">
+              Get access to innovative clinical trials
+            </h1>
+            <p
+              class="max-w-sm text-center text-xl mt-9 text-darkGrayishBlue md:text-left"
+            >
+              Take better care of your health, get compensated, and help in the
+              development of future medicines.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>1
+
+    <!-- Carousel -->
+    <section id="carousel">
+      <div
+        class="container flex flex-col px-4 mx-auto mt-48 h-[842px] space-y-12 md:space-y-0 md:flex-row"
+      >
+        <div class="container">
+          <div class="flex flex-col h-[300px] md:w-3/5">
+            <h2 class="max-w-md text-6xl text-center md:text-left">
+              Find the right clinical study for you
+            </h2>
+            <p class="max-w-sm pt-4 text-center md:text-left">
+              Find the right clinical study for you
+            </p>
+            <a
+              href="#"
+              class="px-8 py-3 mt-6 text-white w-fit bg-black baseline"
+              >Apply for clinical trial</a
+            >
+          </div>
+          <div class="container flex flex-row px-4 gap-10 mx-auto overflow-hidden">
+            <div class="container w-[900px] h-[400px] bg-lightblue">
+              <div class="flex">
+                <div class="mt-10 ml-14">
+                  <p class="text-xl">Downtown Miami Clinic Center</p>
+                  <h3 class="text-5xl py-2">Diabetes type B</h3>
+                  <div class="mt-9">
+                    <div>
+                      <p class="text-base">Overall criteria</p>
+                      <p class="text-xl">Healthy, non-smoking adults in Miami</p>
+                    </div>
+                    <div class="mt-4">
+                      <p class="text-base">Age</p>
+                      <p class="text-xl">18-60</p>
+                    </div>
+                    <div class="mt-4">
+                      <p class="text-base">Stays + Potential reimbursement</p>
+                      <p class="text-xl">1 stay of 6 nights - Up to $3,560</p>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="flex flex-col-reverse order-last w-fit">
+                  <a
+                    href="#"
+                    class="w-fit px-8 py-3 btn baseline border-2 rounded-none border-black"
+                    >Learn more about this study
+                  </a>
+                </div>
+              </div>
+            </div>
+    
+            <div class="container md:w-[900px] md:h-[400px] bg-lightgreen">
+              <div class="flex">
+                <div class="mt-10 ml-14">
+                  <p class="text-xl">Downtown Miami Clinic Center</p>
+                  <h3 class="text-5xl py-2">Diabetes type B</h3>
+                  <div class="mt-9">
+                    <div>
+                      <p class="text-base">Overall criteria</p>
+                      <p class="text-xl">Healthy, non-smoking adults in Miami</p>
+                    </div>
+                    <div class="mt-4">
+                      <p class="text-base">Age</p>
+                      <p class="text-xl">18-60</p>
+                    </div>
+                    <div class="mt-4">
+                      <p class="text-base">Stays + Potential reimbursement</p>
+                      <p class="text-xl">1 stay of 6 nights - Up to $3,560</p>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="flex flex-col-reverse order-last w-fit">
+                  <a
+                    href="#"
+                    class="w-fit px-8 py-3 btn baseline border-2 rounded-none border-black"
+                    >Learn more about this study
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </section>
+    <!--   Benefits -->
+    <section id="benefits">
+      <div class="container mx-auto md:h-[1000px] relative">
+        <div class="w-2/5">
+          <p>BENEFITS</p>
+          <h3 class="text-5xl">Reserka helps you get the care you need</h3>
+        </div>
+        <div class="w-full flex flex-row mt-28">
+          <div class="bg-lightblue md:w-[590px] md:h-[300px] text-left">
+            <h3 class="text-5xl m-10">
+              Transportation and complex medical care
+            </h3>
+            <p class="text-xl mx-10 mb-10">
+              We provide transportation to the clinic for all patients who
+              participate in our studies.
+            </p>
+          </div>
+          <div
+            class="bg-lightpurple md:w-[510px] md:h-[400px] absolute inset-y-0 left-[690px] right-40"
+          >
+            <h3 class="text-5xl m-10">Expert medical staff</h3>
+            <p class="text-xl mx-10 mb-10">
+              Our dedicated and highly skilled team will take care of you from
+              the first minutes you spend in our clinic.
+            </p>
+            <p class="text-xl mx-10 mb-10">
+              For your comfort, expertly-trained medical staff will make sure
+              you are thoroughly informed about the entire treatment process.
+            </p>
+          </div>
+        </div>
+        <div class="w-full flex flex-row mt-10">
+          <div class="bg-lightgreen md:w-[510px] md:h-[420px] ml-32 text-left">
+            <h3 class="text-5xl m-10">State-of-the-art facility</h3>
+            <p class="text-xl mx-10 mb-10">
+              You will feel safe and comfortable in our newly built facility.
+            </p>
+            <p class="text-xl mx-10 mb-10">
+              We not only took care of the best equipment and accessibility but
+              also the welcoming atmosphere of our interiors.
+            </p>
+          </div>
+          <div
+            class="bg-lightgrey md:w-[510px] md:h-[300px] absolute md:top-[450px] md:left-[750px]"
+          >
+            <h3 class="text-5xl m-10">Financial compensation</h3>
+            <p class="text-xl mx-10 mb-10">
+              We value patients' time that's why we grant compensation for
+              participation in the study.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  MEET OUR PROCESS-->
+    <section class="meetProcess mt-32">
+      <div class="container mx-auto md:w-[1920px]">
+        <div>
+          <p class="text-base">MEET OUR PROCESS</p>
+          <h3 class="text-4xl">
+            You are 3 steps away from innovative treatments and therapies
+          </h3>
+        </div>
+        <div class="flex">
+          <div class="flex flex-col mt-36">
+            <div class="justify-center">
+              <h3 class="text-5xl">1.</h3>
+              <p>Complete the survey</p>
+            </div>
+            <div class="mt-44">
+              <div>
+                <h3 class="text-5xl">2.</h3>
+                <p>Find the right trial</p>
+              </div>
+            </div>
+            <div class="mt-44">
+              <div>
+                <h3 class="text-5xl">3.</h3>
+                <p>Meet with our team</p>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center mt-36 md:w-3/5">
+            <div>
+              <img src="img/survey_1.svg" alt="" />
+            </div>
+            <div>
+              <img src="img/trial_2.svg" alt="" />
+            </div>
+            <div>
+              <img src="img/meet_3.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Covid-19-->
+    <section id="covid" class="bg-lightgrey">
+      <div class="container md:mt-[300px] md:w-[1920px] md:h-[800px] mx-auto">
+        <div class="flex flex-row md:pt-[196px]">
+          <div class="md:w-[450px]">
+            <p class="text-base">COVID-19</p>
+            <h3 class="text-4xl leading-snug">
+              We’re making sure to minimize the infection possibility
+            </h3>
+            <p class="text-base pt-4">
+              During these times health of our patients and employees is a top
+              priority. We’re constantly following the COVID-19 situation
+              updates and react accordingly. See what we’re doing to make our
+              clinics a safe space.
+            </p>
+          </div>
+          <div
+            class="ml-[300px] flex flex-col-2 flex-rows-3 flex-wrap md:w-[540px]"
+          >
+            <div class="basis-1/3"><img src="img/socdist_1.svg" alt="" /></div>
+            <div class="basis-1/3"><img src="img/test_2.svg" alt="" /></div>
+            <div class="basis-1/3"><img src="img/mask_3.svg" alt="" /></div>
+            <div class="basis-1/3"><img src="img/temp_4.svg" alt="" /></div>
+            <div class="basis-1/3"><img src="img/clean_5.svg" alt="" /></div>
+            <div class="basis-1/3"><img src="img/ozon_6.svg" alt="" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  Leader In-->
+    <section id="leader">
+      <div class="container md:h-[700px] mx-auto mt-20">
+        <div class="flex flex-row">
+          <div class="md:w-[600px] py-24">
+            <h3 class="text-5xl">Reserka is a leader in clinical research</h3>
+            <p class="text-xl mt-4">
+              We conduct all clinical trials at our state-of-the-art clinic in
+              Miami. More than 130,000 patients a
+            </p>
+            <a
+              href="#"
+              class="bg-black inline-block px-8 py-3 text-white text-base mt-6"
+              >Find out more</a
+            >
+          </div>
+          <div class="flex flex-col items-end md:w-[600px] relative">
+            <div class="">
+              <img
+                src="img/sample.svg"
+                alt=""
+                class="md:w-[150px] md:h-[150px]"
+              />
+            </div>
+            <div class="absolute top-[120px] right-[250px]">
+              <img
+                src="img/flask.svg"
+                alt=""
+                class="md:w-[150px] md:h-[150px]"
+              />
+            </div>
+            <div class="mt-20">
+              <img
+                src="img/microscope.svg"
+                alt=""
+                class="md:w-[150px] md:h-[150px]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  FAQ-->
+    <section id="homeFaq">
+      <div class="container ml-48 mb-40 md:w-[950px]">
+        <div class="mb-20">
+          <p class="text-base">FAQ</p>
+          <h3 class="text-6xl">
+            Have a question in mind? Check what patients ask about frequently
+          </h3>
+        </div>
+        <div class="accordion mx-auto my-4">
+          <!-- 1 -->
+          <div class="accordion-item  mx-0 mt-2 mb-16 ">
+            <div class="accordion-item-header flex items-center font-bold relative cursor-pointer pl-4 py-3 text-3xl">What is a clinical trial?</div>
+            <div class="accordion-item-body overflow-hidden">
+              <div class="accordion-item-body-content p-4 leading-normal bg-lightgreen">
+                 Clinical trials are experiments or observations done in clinical
+                      research. a clinical trial could involve new drugs, medical
+                      devices, biologicals, vaccines, surgical and other medical
+                      treatments and procedures.
+              </div>
+            </div>
+          </div>
+          <!-- 2 -->
+          <div class="accordion-item mx-0 mt-2 mb-14">
+            <div class="accordion-item-header flex items-center font-bold relative cursor-pointer pl-4 py-3 text-3xl">Who can participate in a clinical trial?</div>
+            <div class="accordion-item-body overflow-hidden">
+              <div class="accordion-item-body-content p-4 leading-normal bg-lightgreen">
+                Your eligibility may be based on your age, gender, overall health,
+                      type and stage of a disease, treatment history, and other
+                      conditions.
+              </div>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div class="accordion-item mx-0 mt-2 mb-14">
+            <div class="accordion-item-header flex items-center font-bold relative cursor-pointer pl-4 py-3 text-3xl">What are the benefits of participating in a clinical trial? </div>
+            <div class="accordion-item-body overflow-hidden">
+              <div class="accordion-item-body-content p-4 leading-normal bg-lightgreen">
+                When enrolled in a clinical trial, you not only gain access to cutting-edge & expert care, but you are participating in a potential medical breakthrough that could help many more people in the future. 
+              </div>
+            </div>
+          </div>
+          <!-- 4 -->
+          <div class="accordion-item mx-0 mt-2 mb-14">
+            <div class="accordion-item-header flex items-center font-bold relative cursor-pointer pl-4 py-3 text-3xl">Who is part of a clinical trial? </div>
+            <div class="accordion-item-body overflow-hidden">
+              <div class="accordion-item-body-content p-4 leading-normal bg-lightgreen">
+                You will be monitored closely by top physicians, nurses, pharmacist’s as well as researchers. Should the medical treatment being tested in the clinical trial be effective, you will be one of the first people to reap the benefits before it is released to the public. 
+              </div>
+            </div>
+          </div>
+          <!-- 5 -->
+          <div class="accordion-item  mx-0 mt-2 mb-14">
+            <div class="accordion-item-header flex items-center font-bold relative cursor-pointer pl-4 py-3 text-3xl">Clinical Trial phases </div>
+            <div class="accordion-item-body overflow-hidden">
+              <div class="accordion-item-body-content p-4 leading-normal bg-lightgreen">
+                Your eligibility may be based on your age, gender, overall health,
+                      type and stage of a disease, treatment history, and other
+                      conditions.
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="accordion-item mx-0 mt-2 mb-14">
+            <div class="accordion-item-header flex items-center font-bold relative cursor-pointer pl-4 py-3 text-3xl">Who can I talk to if I want to learn more about clinical trials? </div>
+            <div class="accordion-item-body overflow-hidden">
+              <div class="accordion-item-body-content p-4 leading-normal bg-lightgreen">
+                You can always talk to our clinical coordinators or physicians as well as the principal investigator of the study to learn more information about whether you qualify for a clinical trial, or what the requirements may be for a specific trial.
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+<!-- CTA -->
+<section id="cta" class="container" >
+  <div class="container mx-auto md:w-[1920px] md:h-[800px] flex" >
+    <div class="md:w-2/5 mt-14 p-14 background">
+      <p class="text-base">JOIN CLINICAL TRIAL</p>
+      <h3 class="text-4xl mt-4">Fill out the questionnaire and check what clinical trial you qualify for</h3>
+      <p class="text-xl mt-8">Get access to innovative treatment methods and help in the development of the future medicine.</p>
+    </div>
+    <div class="md:w-3/5 mt-14 pt-14 ml-14">
+      <p class="pt-6 text-base">1/6</p>
+      <h3 class="pt-6 text-5xl">Welcome!</h3>
+      <p class="pt-6 text-base">Before we show you the benefits that you could be eligible for we need to learn more about you. </p>
+      <div>
+        <h3>Select your sex assigned at birth</h3>
+      </div>
+      <div>
+        <div class="flex items-center w-fit pl-4 rounded border border-gray-200 dark:border-gray-700">
+          <input id="bordered-radio-1" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="bordered-radio-1" class="py-4 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">Default radio</label>
+      </div>
+      <div class="flex items-center w-fit pl-4 rounded border border-gray-200 dark:border-gray-700">
+          <input checked id="bordered-radio-2" type="radio" value="" name="bordered-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+          <label for="bordered-radio-2" class="py-4 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300">Checked state</label>
+      </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<section id="footer">
+  <div class="container mt-28 mx-auto md:w-[1920px] md:h-[690px]">
+    <div class="flex justify-between">
+      <div>
+        <a href="#">
+          <img src="img/reserka-logo.svg" alt="Reserka Logo">
+        </a>
+        <p class="mt-5">Let's build a better future of medicine together!</p>
+      </div>
+      <div>
+        <img src="img/circle.png" alt="gradient circle">
+      </div>
+    </div>
+    <div>
+      <div class="flex flex-row justify-between">
+        <div>
+          <p class="mb-6 text-lighttext">Sitemap</p>
+          <div class="flex flex-col md:flex-wrap md:h-[160px] md:w-[175px]">
+            <div class="flex flex-col">
+            <a class="mb-6" href="#">Current Trials</a>
+            <a class="mb-6" href="#">Process</a>
+            <a class="mb-6" href="#">For Sponsors</a>
+            <a class="mb-6" href="#">FAQ</a>
+            </div>
+            <div class="flex flex-col md:pl-16">
+            <a class="mb-6" href="#">About Us</a>
+            <a class="mb-6" href="#">Team</a>
+            <a class="mb-6" href="#">Contact </a>
+            </div>
+          </div> 
+        </div>
+        <div class="mr-40 md:w-[650px]">
+          <p class="mb-6 text-lighttext">Location</p>
+          <h4 class="text-4xl mb-8">Reserka Miami Clinic Center</h4>
+
+          <p class="text-base text-lighttext mb-3">Adress</p>
+          <p class="mb-4">10860 SW 88th Street,#100,<br>Miami,FL,33176</p>
+
+          <p class="text-base text-lighttext mb-3">Phone</p>
+          <p class="mb-4"><a href="#">305-542-3652</a></p>
+
+          <p class="text-base text-lighttext mb-3">Email</p>
+          <p class="mb-4"><a href="#">contact@reserka.com</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
