@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>About Us</title>
+  </head>
+  <body>
+    <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3"
+    >
+      <!-- FLEX container -->
+      <div
+        class="container px-4 md:mx-auto flex flex-wrap items-center justify-between"
+      >
+        <!-- LOGO -->
+        <div
+          class="w-fit relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <img src="img/reserka-logo.svg" alt="Logo Reserka" class="" />
+        </div>
+        <!-- MENU ITEMS -->
+        <div class="hidden space-x-6 pt-2 lg:flex items-center">
+          <a href="#" class="hover:text-darkGrayishBlue">Sponsors</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Clinical trials</a>
+          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Team</a>
+          <a href="#" class="hover:text-darkGrayishBlue">FAQ</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Contact</a>
+          <!-- BUTTON -->
+          <a
+            href="#"
+            class="hidden sm:inline-block p-3 px-6 pt-2 text-white bg-black baseline"
+            >Apply for clinical trial</a
+          >
+        </div>
+
+        <!-- HAMBURGER ICON -->
+
+        <button
+          class="block hamburger lg:hidden focus:outline-none"
+          id="menu-btn"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- MOBILE MENU -->
+
+      <div class="lg:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#">Sponsors</a>
+          <a href="#">Clinical trials</a>
+          <a href="#">About Us</a>
+          <a href="#">Team</a>
+          <a href="#">FAQ</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="w-full md:h-[800px] sm:h-[800px] h-[800px] absolute -z-10 top-0 bg-no-repeat bg-cover background overflow-hidden"
+    ></div>
+
+    <!-- HERO -->
+    <section
+      id="hero"
+      class="container w-[300px] md:w-[1000px] h-[500px] mx-auto mt-54 sm:mt-36 md:mt-64 sm:mx-8 md:mx-32"
+    >
+      <!-- FLEX CONTAINER -->
+      <div class="container mx-auto z-10">
+        <div>
+          <h1 class="lg:text-[80px] w-[500px] md:text-[64px] text-5xl">
+            Welcome to our clinic
+          </h1>
+          <p class="md:text-xl text-base">
+            As a team, we make every effort to achieve the best possible
+            results. We put good communication and your comfort first. We want
+            your experience to be the best it can be, so you can always count on
+            the assistance of our specialists and the many amenities with which
+            our modern clinic has been equipped.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Easy Access Section -->
+    <section class="mt-48">
+      <div class="container">
+        <div class="ml-24">
+          <p class="text-base">easy access</p>
+          <h3 class="text-5xl">On-site amenities</h3>
+          <p class="text-xl">
+            Our newly built clinic is located in the heart of Miami. Ample
+            parking is available for patients. We also provide transportation to
+            the site for all trial participants. See how our state-of-the-art
+            clinic looks inside.
+          </p>
+        </div>
+      </div>
+      <div class="w-full mt-40 flex flex-row flex-wrap gap-32">
+        <img src="img/about-us/wiating-room.png" alt="" />
+        <img src="img/about-us/specialits.png" alt="" />
+        <img
+          src="img/about-us/national-cancer-institute-mBrfAiw_CZA-unsplash.png"
+          alt=""
+        />
+        <img src="img/about-us/office-room.png" alt="" />
+        <img src="img/about-us/waiting.png" alt="" />
+        <img src="img/about-us/clinic.png" alt="" />
+        <img src="img/about-us/team.png" alt="" />
+        <img src="img/about-us/room.png" alt="" />
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container mt-28 mx-auto md:w-[1920px] md:h-[690px]">
+        <div class="flex justify-between">
+          <div>
+            <a href="#">
+              <img src="img/reserka-logo.svg" alt="Reserka Logo" />
+            </a>
+            <p class="mt-5">
+              Let's build a better future of medicine together!
+            </p>
+          </div>
+          <div>
+            <img src="img/circle.png" alt="gradient circle" />
+          </div>
+        </div>
+        <div>
+          <div class="flex flex-row justify-between">
+            <div>
+              <p class="mb-6 text-lighttext">Sitemap</p>
+              <div class="flex flex-col md:flex-wrap md:h-[160px] md:w-[175px]">
+                <div class="flex flex-col">
+                  <a class="mb-6" href="#">Current Trials</a>
+                  <a class="mb-6" href="#">Process</a>
+                  <a class="mb-6" href="#">For Sponsors</a>
+                  <a class="mb-6" href="#">FAQ</a>
+                </div>
+                <div class="flex flex-col md:pl-16">
+                  <a class="mb-6" href="#">About Us</a>
+                  <a class="mb-6" href="#">Team</a>
+                  <a class="mb-6" href="#">Contact </a>
+                </div>
+              </div>
+            </div>
+            <div class="mr-40 md:w-[650px]">
+              <p class="mb-6 text-lighttext">Location</p>
+              <h4 class="text-4xl mb-8">Reserka Miami Clinic Center</h4>
+
+              <p class="text-base text-lighttext mb-3">Adress</p>
+              <p class="mb-4">10860 SW 88th Street,#100,<br />Miami,FL,33176</p>
+
+              <p class="text-base text-lighttext mb-3">Phone</p>
+              <p class="mb-4"><a href="#">305-542-3652</a></p>
+
+              <p class="text-base text-lighttext mb-3">Email</p>
+              <p class="mb-4"><a href="#">contact@reserka.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

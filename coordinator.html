@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Coordinator</title>
+  </head>
+  <body>
+    <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3"
+    >
+      <!-- FLEX container -->
+      <div
+        class="container px-4 md:mx-auto flex flex-wrap items-center justify-between"
+      >
+        <!-- LOGO -->
+        <div
+          class="w-fit relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <img src="img/reserka-logo.svg" alt="Logo Reserka" class="" />
+        </div>
+        <!-- MENU ITEMS -->
+        <div class="hidden space-x-6 pt-2 lg:flex items-center">
+          <a href="#" class="hover:text-darkGrayishBlue">Sponsors</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Clinical trials</a>
+          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Team</a>
+          <a href="#" class="hover:text-darkGrayishBlue">FAQ</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Contact</a>
+          <!-- BUTTON -->
+          <a
+            href="#"
+            class="hidden sm:inline-block p-3 px-6 pt-2 text-white bg-black baseline"
+            >Apply for clinical trial</a
+          >
+        </div>
+
+        <!-- HAMBURGER ICON -->
+
+        <button
+          class="block hamburger lg:hidden focus:outline-none"
+          id="menu-btn"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- MOBILE MENU -->
+
+      <div class="lg:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#">Sponsors</a>
+          <a href="#">Clinical trials</a>
+          <a href="#">About Us</a>
+          <a href="#">Team</a>
+          <a href="#">FAQ</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="w-full md:h-[800px] sm:h-[800px] h-[800px] absolute -z-10 top-0 bg-no-repeat bg-cover background overflow-hidden"
+    ></div>
+
+    <!-- HERO -->
+    <section
+      id="hero"
+      class="container w-[300px] md:w-[1000px] h-[500px] ml-2 mt-36 sm:mt-36 md:mt-56 sm:mx-8 md:mx-32"
+    >
+      <!-- FLEX CONTAINER -->
+      <div class="container mx-auto z-10">
+        <div>
+          <h1 class="lg:text-[80px] md:text-[64px] text-5xl">
+            Join a study today and get compensated!
+          </h1>
+          <p class="md:text-xl text-base">
+            Contact us directly for a quicker response. Our experts will give
+            you all the necessary information and help you find the right trial
+            for you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Schedule -->
+    <section id="scheduleObesity">
+      <div class="container mt-20 ml-4 sm:mx-10 md:mx-auto flex flex-row">
+        <div class="w-[350px] md:w-[600px]">
+          <h3 class="text-3xl md:text-4xl">Schedule a meeting in our clinic</h3>
+          <p class="text-xl mt-4">
+            Provide your personal data so that we can contact you about the
+            appointment. Each trial starts with a medical exam.
+          </p>
+          <div class="mt-14">
+            <label for="fullname">Full name</label>
+            <div class="w-[250px]">
+              <input
+                id="fullname"
+                type="text"
+                class="w-fit border-gray-300 rounded-lg shadow-md p-2"
+                placeholder="Robert Johnson"
+              />
+            </div>
+          </div>
+          <div class="mt-4">
+            <label for="phoneNumber">Phone number</label>
+            <div class="w-[250px]">
+              <input
+                id="phoneNumber"
+                type="tel"
+                class="w-fit border-gray-300 rounded-lg shadow-md p-2 focus:border-lightgreen"
+                placeholder="+1 355-340-4498"
+              />
+            </div>
+          </div>
+          <div class="mt-4">
+            <label for="email">Email adress</label>
+            <div class="w-[250px]">
+              <input
+                id="email"
+                type="email"
+                class="w-fit border-gray-300 rounded-lg shadow-md p-2 focus:border-green-500"
+                placeholder="you@example.com"
+              />
+            </div>
+          </div>
+          <a href="#" class="inline-block bg-black px-6 py-2 text-white mt-6"
+            >Send</a
+          >
+        </div>
+        <div class="hidden md:inline-block md:ml-60 mt-32">
+          <img src="img/survey_1.svg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="border-t-2 mt-20">
+      <div class="container ml-4 mt-28 md:mx-auto md:w-[1000px] h-[690px]">
+        <div
+          class="flex justify-between flex-col-reverse md:flex-row items-center"
+        >
+          <div class="">
+            <a href="#" class="inline-block ml-8">
+              <img src="img/reserka-logo.svg" alt="Reserka Logo" />
+            </a>
+            <p class="mt-5 text-center w-[200px]">
+              Let's build a better future of medicine together!
+            </p>
+          </div>
+          <div>
+            <img src="img/circle.png" alt="gradient circle" />
+          </div>
+        </div>
+        <div class="flex flex-col justify-between mt-4">
+          <div class="flex flex-col lg:flex-row justify-between">
+            <div>
+              <p class="mb-6 text-lighttext">Sitemap</p>
+              <div class="flex flex-col md:flex-wrap md:h-[160px] md:w-[175px]">
+                <div class="flex flex-col">
+                  <a class="mb-6" href="#">Current Trials</a>
+                  <a class="mb-6" href="#">Process</a>
+                  <a class="mb-6" href="#">For Sponsors</a>
+                  <a class="mb-6" href="#">FAQ</a>
+                </div>
+                <div class="flex flex-col md:pl-16">
+                  <a class="mb-6" href="#">About Us</a>
+                  <a class="mb-6" href="#">Team</a>
+                  <a class="mb-6" href="#">Contact </a>
+                </div>
+              </div>
+            </div>
+            <div class="md:w-[650px]">
+              <p class="mb-6 text-lighttext mt-10 lg:mt-0">Location</p>
+              <h4 class="text-4xl mb-8">Reserka Miami Clinic Center</h4>
+
+              <p class="text-base text-lighttext mb-3">Adress</p>
+              <p class="mb-4">10860 SW 88th Street,#100,<br />Miami,FL,33176</p>
+
+              <p class="text-base text-lighttext mb-3">Phone</p>
+              <p class="mb-4"><a href="#">305-542-3652</a></p>
+
+              <p class="text-base text-lighttext mb-3">Email</p>
+              <p class="mb-4"><a href="#">contact@reserka.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

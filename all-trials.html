@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>All trails</title>
+  </head>
+  <body>
+    <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3"
+    >
+      <!-- FLEX container -->
+      <div
+        class="container px-4 md:mx-auto flex flex-wrap items-center justify-between"
+      >
+        <!-- LOGO -->
+        <div
+          class="w-fit relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <img src="img/reserka-logo.svg" alt="Logo Reserka" class="" />
+        </div>
+        <!-- MENU ITEMS -->
+        <div class="hidden space-x-6 pt-2 lg:flex items-center">
+          <a href="#" class="hover:text-darkGrayishBlue">Sponsors</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Clinical trials</a>
+          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Team</a>
+          <a href="#" class="hover:text-darkGrayishBlue">FAQ</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Contact</a>
+          <!-- BUTTON -->
+          <a
+            href="#"
+            class="hidden sm:inline-block p-3 px-6 pt-2 text-white bg-black baseline"
+            >Apply for clinical trial</a
+          >
+        </div>
+
+        <!-- HAMBURGER ICON -->
+
+        <button
+          class="block hamburger lg:hidden focus:outline-none"
+          id="menu-btn"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- MOBILE MENU -->
+
+      <div class="lg:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#">Sponsors</a>
+          <a href="#">Clinical trials</a>
+          <a href="#">About Us</a>
+          <a href="#">Team</a>
+          <a href="#">FAQ</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="w-full md:h-[800px] sm:h-[800px] h-[800px] absolute -z-10 top-0 bg-no-repeat bg-cover background overflow-hidden"
+    ></div>
+
+    <!-- HERO -->
+    <section
+      id="hero"
+      class="container w-[300px] md:w-[1000px] h-[500px] mx-auto mt-54 sm:mt-36 md:mt-64 sm:mx-8 md:mx-32"
+    >
+      <!-- FLEX CONTAINER -->
+      <div class="container mx-auto z-10">
+        <div>
+          <h1 class="lg:text-[80px] w-[500px] md:text-[64px] text-5xl">
+            Current clinical studies
+          </h1>
+          <p class="md:text-xl text-base">
+            Explore all the ongoing clincal trials. Contact our experts if you
+            want to learn more.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Trials -->
+    <section id="trials">
+      <div class="container mt-40 mb-96 mx-auto flex flex-col">
+        <div class="relative">
+          <div
+            class="lg:w-[530px] md:w-[360px] sm:w-[300px] bg-lightgreen px-12 py-5"
+          >
+            <p class="text-xl">Downtown Miami Clinic Center</p>
+            <h3 class="lg:text-[40px] md:text-4xl sm:text-[28px] mt-2">
+              Obesity in the young age - College Students
+            </h3>
+            <div class="mt-10">
+              <p class="text-base text-lighttext mt-2">Overall criteria</p>
+              <p class="mt-3">Healthy, non-smoking adults in Miami</p>
+              <p class="text-base text-lighttext mt-2">Age</p>
+              <p class="mt-3">18-60</p>
+              <p class="text-base text-lighttext mt-2">
+                Stays + Potential reimbursement
+              </p>
+              <p class="mt-3 mb-14">1 stay of 6 nights - Up to $3,560</p>
+            </div>
+            <a
+              href="#"
+              class="mt-4 px-6 py-4 border-2 border-black inline-block"
+              >Learn more about this study</a
+            >
+          </div>
+        </div>
+        <div class="mt-9">
+          <div
+            class="lg:w-[530px] md:w-[360px] sm:w-[300px] bg-lightblue md:absolute top-[1200px] left-[750px] px-12 py-5"
+          >
+            <p class="text-xl">Downtown Miami Clinic Center</p>
+            <h3 class="lg:text-[40px] md:text-4xl sm:text-[28px] mt-2">
+              Healthy spine for construction workers
+            </h3>
+            <div class="mt-10">
+              <p class="text-base text-lighttext mt-2">Overall criteria</p>
+              <p class="mt-3">Healthy, non-smoking adults in Miami</p>
+              <p class="text-base text-lighttext mt-2">Age</p>
+              <p class="mt-3">18-60</p>
+              <p class="text-base text-lighttext mt-2">
+                Stays + Potential reimbursement
+              </p>
+              <p class="mt-3">1 stay of 6 nights - Up to $3,560</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-9">
+          <div
+            class="lg:w-[530px] md:w-[360px] sm:w-[300px] bg-lightpurple px-12 py-5"
+          >
+            <p class="text-xl">Downtown Miami Clinic Center</p>
+            <h3 class="lg:text-[40px] md:text-4xl sm:text-[28px] mt-2">
+              Diabetes type B
+            </h3>
+            <div class="mt-10">
+              <p class="text-base text-lighttext mt-2">Overall criteria</p>
+              <p class="mt-3">Healthy, non-smoking adults in Miami</p>
+              <p class="text-base text-lighttext mt-2">Age</p>
+              <p class="mt-3">18-60</p>
+              <p class="text-base text-lighttext mt-2">
+                Stays + Potential reimbursement
+              </p>
+              <p class="mt-3">1 stay of 6 nights - Up to $3,560</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-9">
+          <div
+            class="lg:w-[530px] md:w-[360px] sm:w-[300px] md:absolute top-[1750px] left-[750px] bg-lightgreen px-12 py-5"
+          >
+            <p class="text-xl">Downtown Miami Clinic Center</p>
+            <h3 class="lg:text-[40px] md:text-4xl sm:text-[28px] mt-2">
+              Cardiovascular Diseases (CVDs)
+            </h3>
+            <div class="mt-10">
+              <p class="text-base text-lighttext mt-2">Overall criteria</p>
+              <p class="mt-3">Healthy, non-smoking adults in Miami</p>
+              <p class="text-base text-lighttext mt-2">Age</p>
+              <p class="mt-3">18-60</p>
+              <p class="text-base text-lighttext mt-2">
+                Stays + Potential reimbursement
+              </p>
+              <p class="mt-3">1 stay of 6 nights - Up to $3,560</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-9">
+          <div
+            class="lg:w-[530px] md:w-[360px] sm:w-[300px] bg-lightblue px-12 py-5"
+          >
+            <p class="text-xl">Downtown Miami Clinic Center</p>
+            <h3 class="lg:text-[40px] md:text-4xl sm:text-[28px] mt-2">
+              Obesity in the young age
+            </h3>
+            <div class="mt-10">
+              <p class="text-base text-lighttext mt-2">Overall criteria</p>
+              <p class="mt-3">Healthy, non-smoking adults in Miami</p>
+              <p class="text-base text-lighttext mt-2">Age</p>
+              <p class="mt-3">18-60</p>
+              <p class="text-base text-lighttext mt-2">
+                Stays + Potential reimbursement
+              </p>
+              <p class="mt-3">1 stay of 6 nights - Up to $3,560</p>
+            </div>
+          </div>
+        </div>
+        <div class="mt-9">
+          <div
+            class="lg:w-[530px] md:w-[360px] sm:w-[300px] md:absolute top-[2250px] left-[750px] bg-lightpurple px-12 py-5"
+          >
+            <p class="text-xl">Downtown Miami Clinic Center</p>
+            <h3 class="lg:text-[40px] md:text-4xl sm:text-[28px] mt-2">
+              Obesity in the young age
+            </h3>
+            <div class="mt-10">
+              <p class="text-base text-lighttext mt-2">Overall criteria</p>
+              <p class="mt-3">Healthy, non-smoking adults in Miami</p>
+              <p class="text-base text-lighttext mt-2">Age</p>
+              <p class="mt-3">18-60</p>
+              <p class="text-base text-lighttext mt-2">
+                Stays + Potential reimbursement
+              </p>
+              <p class="mt-3">1 stay of 6 nights - Up to $3,560</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta" class="container">
+      <div class="container mx-auto md:w-[1920px] md:h-[800px] flex">
+        <div class="md:w-2/5 mt-14 p-14 background">
+          <p class="text-base">JOIN CLINICAL TRIAL</p>
+          <h3 class="text-4xl mt-4">
+            Fill out the questionnaire and check what clinical trial you qualify
+            for
+          </h3>
+          <p class="text-xl mt-8">
+            Get access to innovative treatment methods and help in the
+            development of the future medicine.
+          </p>
+        </div>
+        <div class="md:w-3/5 mt-14 pt-14 ml-14">
+          <p class="pt-6 text-base">1/6</p>
+          <h3 class="pt-6 text-5xl">Welcome!</h3>
+          <p class="pt-6 text-base">
+            Before we show you the benefits that you could be eligible for we
+            need to learn more about you.
+          </p>
+          <div>
+            <h3>Select your sex assigned at birth</h3>
+          </div>
+          <div>
+            <div
+              class="flex items-center w-fit pl-4 rounded border border-gray-200 dark:border-gray-700"
+            >
+              <input
+                id="bordered-radio-1"
+                type="radio"
+                value=""
+                name="bordered-radio"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                for="bordered-radio-1"
+                class="py-4 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300"
+                >Default radio</label
+              >
+            </div>
+            <div
+              class="flex items-center w-fit pl-4 rounded border border-gray-200 dark:border-gray-700"
+            >
+              <input
+                checked
+                id="bordered-radio-2"
+                type="radio"
+                value=""
+                name="bordered-radio"
+                class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+              />
+              <label
+                for="bordered-radio-2"
+                class="py-4 ml-2 w-full text-sm font-medium text-gray-900 dark:text-gray-300"
+                >Checked state</label
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container mt-28 mx-auto md:w-[1920px] md:h-[690px]">
+        <div class="flex justify-between">
+          <div>
+            <a href="#">
+              <img src="img/reserka-logo.svg" alt="Reserka Logo" />
+            </a>
+            <p class="mt-5">
+              Let's build a better future of medicine together!
+            </p>
+          </div>
+          <div>
+            <img src="img/circle.png" alt="gradient circle" />
+          </div>
+        </div>
+        <div>
+          <div class="flex flex-row justify-between">
+            <div>
+              <p class="mb-6 text-lighttext">Sitemap</p>
+              <div class="flex flex-col md:flex-wrap md:h-[160px] md:w-[175px]">
+                <div class="flex flex-col">
+                  <a class="mb-6" href="#">Current Trials</a>
+                  <a class="mb-6" href="#">Process</a>
+                  <a class="mb-6" href="#">For Sponsors</a>
+                  <a class="mb-6" href="#">FAQ</a>
+                </div>
+                <div class="flex flex-col md:pl-16">
+                  <a class="mb-6" href="#">About Us</a>
+                  <a class="mb-6" href="#">Team</a>
+                  <a class="mb-6" href="#">Contact </a>
+                </div>
+              </div>
+            </div>
+            <div class="mr-40 md:w-[650px]">
+              <p class="mb-6 text-lighttext">Location</p>
+              <h4 class="text-4xl mb-8">Reserka Miami Clinic Center</h4>
+
+              <p class="text-base text-lighttext mb-3">Adress</p>
+              <p class="mb-4">10860 SW 88th Street,#100,<br />Miami,FL,33176</p>
+
+              <p class="text-base text-lighttext mb-3">Phone</p>
+              <p class="mb-4"><a href="#">305-542-3652</a></p>
+
+              <p class="text-base text-lighttext mb-3">Email</p>
+              <p class="mb-4"><a href="#">contact@reserka.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

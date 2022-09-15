@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Team</title>
+  </head>
+  <body>
+    <nav
+      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3"
+    >
+      <!-- FLEX container -->
+      <div
+        class="container px-4 md:mx-auto flex flex-wrap items-center justify-between"
+      >
+        <!-- LOGO -->
+        <div
+          class="w-fit relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+        >
+          <img src="img/reserka-logo.svg" alt="Logo Reserka" class="" />
+        </div>
+        <!-- MENU ITEMS -->
+        <div class="hidden space-x-6 pt-2 lg:flex items-center">
+          <a href="#" class="hover:text-darkGrayishBlue">Sponsors</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Clinical trials</a>
+          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Team</a>
+          <a href="#" class="hover:text-darkGrayishBlue">FAQ</a>
+          <a href="#" class="hover:text-darkGrayishBlue">Contact</a>
+          <!-- BUTTON -->
+          <a
+            href="#"
+            class="hidden sm:inline-block p-3 px-6 pt-2 text-white bg-black baseline"
+            >Apply for clinical trial</a
+          >
+        </div>
+
+        <!-- HAMBURGER ICON -->
+
+        <button
+          class="block hamburger lg:hidden focus:outline-none"
+          id="menu-btn"
+        >
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+
+      <!-- MOBILE MENU -->
+
+      <div class="lg:hidden">
+        <div
+          id="menu"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:self-center left-6 right-6 drop-shadow-md"
+        >
+          <a href="#">Sponsors</a>
+          <a href="#">Clinical trials</a>
+          <a href="#">About Us</a>
+          <a href="#">Team</a>
+          <a href="#">FAQ</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div
+      class="w-full md:h-[800px] sm:h-[800px] h-[800px] absolute -z-10 top-0 bg-no-repeat bg-cover background overflow-hidden"
+    ></div>
+
+    <!-- HERO -->
+    <section
+      id="hero"
+      class="container w-[300px] md:w-[1000px] h-[500px] mx-auto mt-54 sm:mt-36 md:mt-64 sm:mx-8 md:mx-32"
+    >
+      <!-- FLEX CONTAINER -->
+      <div class="container mx-auto z-10">
+        <div>
+          <h1 class="lg:text-[80px] w-[500px] md:text-[64px] text-5xl">
+            Meet the team
+          </h1>
+          <p class="md:text-xl text-base">
+            Get to know our dedicated and highly skilled medical professionals
+            who will take care of you and make sure you are comfortable at every
+            stage of the study.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Health Care Spec -->
+    <section class="mt-36">
+      <div class="container mx-auto">
+        <div class="flex flex-col">
+          <div class="w-[450px]">
+            <p class="mb-2 text-base">healthcare specialists</p>
+            <h3 class="text-5xl">
+              Experience the top of the class care and personnel
+            </h3>
+          </div>
+          <div class="flex flex-row mx-auto mt-32 gap-32">
+            <div>
+              <img
+                src="img/files.svg"
+                alt="Client data img"
+                class="h-[175px]"
+              />
+              <h3 class="text-[64px]">+130k</h3>
+              <p>Patients in our database</p>
+            </div>
+            <div>
+              <img
+                src="img/microscope.svg"
+                alt="Microscope"
+                class="h-[175px]"
+              />
+              <h3 class="text-[64px]">??</h3>
+              <p>Qualified medical specialists</p>
+            </div>
+            <div>
+              <img
+                src="img/stethoscope.svg"
+                alt="Stethoscope"
+                class="h-[175px]"
+              />
+              <h3 class="text-[64px]">7</h3>
+              <p>Medical fields we specialize in</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Values -->
+    <section class="mt-36 mb-60">
+      <div class="container mx-auto relative">
+        <div>
+          <div class="mb-36">
+            <p class="text-base">our values</p>
+            <h3 class="text-[28px] mt-2 md:text-4xl lg:text-5xl w-[430px]">
+              Reserka: the leading edge of medical research
+            </h3>
+          </div>
+          <div>
+            <div
+              class="bg-lightpurple p-6 w-[370px] absolute top-[150px] left-[550px]"
+            >
+              <h3 class="text-2xl md:text-[28px] lg:text-[40px]">Quality</h3>
+              <p class="text-base md:text-xl lg:text-2xl">
+                Vast patient database enables us to conduct research at the
+                highest level.
+              </p>
+              <p class="text-base md:text-xl lg:text-2xl">
+                To ensure the highest quality of studies, our clinic uses
+                state-of-the-art technology.
+              </p>
+            </div>
+            <div class="bg-lightblue p-6 w-[370px]">
+              <h3 class="text-2xl md:text-[28px] lg:text-[40px]">Precision</h3>
+              <p class="text-base md:text-xl lg:text-2xl">
+                Access to state-of-the-art technology allows us to conduct
+                trials with the utmost accuracy.
+              </p>
+              <p class="text-base md:text-xl lg:text-2xl">
+                The huge percentage of patients completing the full cycle of
+                testing makes it possible to provide precise results.
+              </p>
+            </div>
+            <div
+              class="bg-lightgreen p-6 w-[370px] absolute top-[490px] left-[550px]"
+            >
+              <h3 class="text-2xl md:text-[28px] lg:text-[40px]">Experience</h3>
+              <p class="text-base md:text-xl lg:text-2xl">
+                Our team consists of qualified experts who have been involved in
+                clinical research and healthcare for years. Collectively, that's
+                as much as 15 years of experience in the field.
+              </p>
+            </div>
+          </div>
+          <div class="mt-48 w-[800px] mx-auto">
+            <h3 class="text-4xl md:text-[64px] mb-8">
+              Together we can change the world for the better
+            </h3>
+            <p class="text-base md:text-xl">
+              Here are the companies we work with:
+            </p>
+            <div class="flex flex-row gap-20 pt-20">
+              <img src="img/gsk.png" alt="GSK Logo" class="w-[100px]" />
+              <img src="img/pfizer.png" alt="Pfizer Logo" class="w-[100px]" />
+              <img
+                src="img/astra.png"
+                alt="AstraZeneca Logo"
+                class="w-[100px]"
+              />
+              <img src="img/pfizer.png" alt="Pfizer Logo" class="w-[100px]" />
+              <img
+                src="img/gilead-logo.svg"
+                alt="Gilead Logo"
+                class="w-[100px]"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="mx-30">
+      <div class="container mx-auto">
+        <p class="text-base">seasoned experts</p>
+        <h3 class="text-5xl">Meet the team</h3>
+        <div class="mt-14 flex flex-row flex-wrap">
+          <div class="flex flex-row w-[600px]">
+            <img
+              src="img/jeremy.png"
+              alt="Jeremy Fox CEO"
+              class="w-[270px] h-[350px]"
+            />
+            <div class="ml-6">
+              <h3 class="text-[40px]">Jeremy Fox</h3>
+              <p class="text-2xl">CEO</p>
+              <p class="text-[18px]">
+                A native resident of South Florida. Jeremy grew up amongst a
+                family of physicians and healthcare industry leaders. He
+                graduated from medical school in 2019, and decided to focus on a
+                career in healthcare entrepreneurship. He has developed and sold
+                healthcare technology and wellness products. For fun he enjoys
+                outdoor activities, weightlifting, and flying airplanes.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-row w-[600px] mt-32">
+            <img
+              src="img/leo.png"
+              alt="Leo Garcia"
+              class="w-[270px] h-[350px]"
+            />
+            <div>
+              <h3 class="text-[40px]">Leo Garcia</h3>
+              <p class="text-2xl">ROLE</p>
+              <p class="text-[18px]">Missing BIO</p>
+            </div>
+          </div>
+          <div class="flex flex-row w-[600px] mt-16">
+            <img
+              src="img/amanda.png"
+              alt="Amanda Vega"
+              class="w-[270px] h-[350px]"
+            />
+            <div>
+              <h3 class="text-[40px]">Amanda Vega</h3>
+              <p class="text-2xl">Lead Coordinator</p>
+              <p class="text-[18px]">
+                Lead clinical coordinator with a bachelors in science of nursing
+                with over six years of clinical, academic, and industry
+                experience. Amanda has lead the development and expansion of
+                Reserka by acquiring responsibility for all aspects of the
+                regulatory & development, medical affairs, training and
+                leadership.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-row w-[600px] mt-32">
+            <img
+              src="img/giancarlo.png"
+              alt="Giancarlo Gasparini"
+              class="w-[270px] h-[350px]"
+            />
+            <div>
+              <h3 class="text-[40px]">Giancarlo Gasparini</h3>
+              <p class="text-2xl">ROLE</p>
+              <p class="text-[18px]">Missing BIO</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section>
+      <div class="container mx-auto pt-48 mb-52">
+        <div class="relative">
+          <h3 class="text-[64px]">Have any questions? Let us know!</h3>
+          <p class="text-xl mb-8 w-[630px]">
+            Want to learn more or meet us in person? We'd be happy to answer
+            your questions or give you a tour of our clinic.
+          </p>
+          <a href="#" class="bg-black text-white px-8 py-4 inline-block"
+            >Contact Us</a
+          >
+          <img
+            src="img/paper-plane.svg"
+            alt="Contact us paper plane"
+            class="absolute top-[90px] left-[1050px]"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container mt-28 mx-auto md:w-[1920px] md:h-[690px]">
+        <div class="flex justify-between">
+          <div>
+            <a href="#">
+              <img src="img/reserka-logo.svg" alt="Reserka Logo" />
+            </a>
+            <p class="mt-5">
+              Let's build a better future of medicine together!
+            </p>
+          </div>
+          <div>
+            <img src="img/circle.png" alt="gradient circle" />
+          </div>
+        </div>
+        <div>
+          <div class="flex flex-row justify-between">
+            <div>
+              <p class="mb-6 text-lighttext">Sitemap</p>
+              <div class="flex flex-col md:flex-wrap md:h-[160px] md:w-[175px]">
+                <div class="flex flex-col">
+                  <a class="mb-6" href="#">Current Trials</a>
+                  <a class="mb-6" href="#">Process</a>
+                  <a class="mb-6" href="#">For Sponsors</a>
+                  <a class="mb-6" href="#">FAQ</a>
+                </div>
+                <div class="flex flex-col md:pl-16">
+                  <a class="mb-6" href="#">About Us</a>
+                  <a class="mb-6" href="#">Team</a>
+                  <a class="mb-6" href="#">Contact </a>
+                </div>
+              </div>
+            </div>
+            <div class="mr-40 md:w-[650px]">
+              <p class="mb-6 text-lighttext">Location</p>
+              <h4 class="text-4xl mb-8">Reserka Miami Clinic Center</h4>
+
+              <p class="text-base text-lighttext mb-3">Adress</p>
+              <p class="mb-4">10860 SW 88th Street,#100,<br />Miami,FL,33176</p>
+
+              <p class="text-base text-lighttext mb-3">Phone</p>
+              <p class="mb-4"><a href="#">305-542-3652</a></p>
+
+              <p class="text-base text-lighttext mb-3">Email</p>
+              <p class="mb-4"><a href="#">contact@reserka.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
