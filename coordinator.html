@@ -8,31 +8,74 @@
     <title>Coordinator</title>
   </head>
   <body>
+    <!-- NAV -->
     <nav
       class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3"
     >
       <!-- FLEX container -->
       <div
-        class="container px-4 md:mx-auto flex flex-wrap items-center justify-between"
+        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
       >
         <!-- LOGO -->
         <div
           class="w-fit relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
         >
-          <img src="img/reserka-logo.svg" alt="Logo Reserka" class="" />
+          <img src="img/reserka-logo.svg" alt="Logo Reserka" />
         </div>
         <!-- MENU ITEMS -->
-        <div class="hidden space-x-6 pt-2 lg:flex items-center">
-          <a href="#" class="hover:text-darkGrayishBlue">Sponsors</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Clinical trials</a>
-          <a href="#" class="hover:text-darkGrayishBlue">About Us</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Team</a>
-          <a href="#" class="hover:text-darkGrayishBlue">FAQ</a>
-          <a href="#" class="hover:text-darkGrayishBlue">Contact</a>
+        <div class="hidden space-x-6 pt-2 md:flex items-center">
+          <a href="sponsors.html" class="hover:text-darkGrayishBlue"
+            >Sponsors</a
+          >
+          <div class="">
+            <div class="group inline-block relative">
+              <button class="py-2 px-4 rounded inline-flex items-center">
+                <span class="mr-1">Clinical Trials</span>
+                <svg
+                  class="fill-current h-4 w-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                  />
+                </svg>
+              </button>
+              <ul class="absolute hidden pt-1 group-hover:block">
+                <li class="">
+                  <a
+                    class="rounded-t py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Current Trials</a
+                  >
+                </li>
+                <li class="">
+                  <a class="py-2 px-4 block whitespace-no-wrap" href="#"
+                    >For Sponsors</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    class="rounded-b py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Process</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="about-us.html" class="hover:text-darkGrayishBlue"
+            >About Us</a
+          >
+          <a href="team.html" class="hover:text-darkGrayishBlue">Team</a>
+          <a href="faq.html" class="hover:text-darkGrayishBlue">FAQ</a>
+          <a href="contact-us.html" class="hover:text-darkGrayishBlue"
+            >Contact</a
+          >
           <!-- BUTTON -->
           <a
             href="#"
-            class="hidden sm:inline-block p-3 px-6 pt-2 text-white bg-black baseline"
+            class="hidden md:inline-block p-3 px-6 pt-2 text-white bg-black baseline"
             >Apply for clinical trial</a
           >
         </div>
@@ -40,7 +83,7 @@
         <!-- HAMBURGER ICON -->
 
         <button
-          class="block hamburger lg:hidden focus:outline-none"
+          class="block hamburger md:hidden focus:outline-none"
           id="menu-btn"
         >
           <span class="hamburger-top"></span>
@@ -51,17 +94,55 @@
 
       <!-- MOBILE MENU -->
 
-      <div class="lg:hidden">
+      <div class="md:hidden">
         <div
           id="menu"
-          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:self-center left-6 right-6 drop-shadow-md"
+          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
         >
-          <a href="#">Sponsors</a>
-          <a href="#">Clinical trials</a>
-          <a href="#">About Us</a>
-          <a href="#">Team</a>
-          <a href="#">FAQ</a>
-          <a href="#">Contact</a>
+          <a href="sponsors.html">Sponsors</a>
+          <div class="">
+            <div class="group inline-block relative">
+              <button class="py-2 px-4 rounded inline-flex items-center">
+                <span class="mr-1">Clinical Trials</span>
+                <svg
+                  class="fill-current h-4 w-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                  />
+                </svg>
+              </button>
+              <ul class="absolute hidden pt-1 group-hover:block">
+                <li class="">
+                  <a
+                    class="rounded-t py-2 px-4 block whitespace-no-wrap"
+                    href="all-trials.html"
+                    >Current Trials</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    class="py-2 px-4 block whitespace-no-wrap"
+                    href="sponsors.html"
+                    >For Sponsors</a
+                  >
+                </li>
+                <li class="">
+                  <a
+                    class="rounded-b py-2 px-4 block whitespace-no-wrap"
+                    href="#"
+                    >Process</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="about-us.html">About Us</a>
+          <a href="team.html">Team</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact-us.html">Contact</a>
         </div>
       </div>
     </nav>
