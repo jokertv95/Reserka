@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/fontello.css	" />
     <title>Reserka</title>
   </head>
@@ -200,11 +201,11 @@
                 </a>
               </div>
               <div>
-                <button class="carousel__button carousel__button--left">
-                  <i class="icon-minus"></i>
+                <button class="carousel__button prev">
+                  <img src="img/left-arrow.svg" alt="" />
                 </button>
-                <button class="carousel__button carousel__button--right">
-                  <i class="icon-plus"></i>
+                <button class="carousel__button next">
+                  <img src="img/right-arrow.svg" alt="" />
                 </button>
               </div>
             </div>
@@ -212,7 +213,7 @@
           <!-- STUDY COROUSEL -->
           <div class="carousel">
             <div
-              class="mt-20 flex flex-row gap-20 carousel__track-container relative"
+              class="mt-20 flex flex-row flex-shrink-0 gap-20 relative carousel__inner"
             >
               <!-- First Element -->
               <div
@@ -252,7 +253,79 @@
               </div>
               <!-- Second Element -->
               <div
-                class="bg-lightblue xxl:w-[910px] xl:w-[910px] lg:w-[510px] md:w-[510px] w-[320px] h-fit sm:hidden"
+                class="bg-lightblue xxl:w-[910px] xl:w-[910px] lg:w-[510px] md:w-[510px] w-[320px] h-fit"
+              >
+                <div class="px-[60px] py-[40px]">
+                  <p class="text-xl">Downtown Miami Clinic Center</p>
+                  <h3 class="text-5xl py-2">Diabetes type B</h3>
+                  <div class="mt-9">
+                    <div>
+                      <p class="text-base">Overall criteria</p>
+                      <p class="text-xl">
+                        Healthy, non-smoking adults in Miami
+                      </p>
+                    </div>
+                    <div class="mt-4">
+                      <p class="text-base">Age</p>
+                      <p class="text-xl">18-60</p>
+                    </div>
+                    <div
+                      class="mt-4 flex xl:flex-row xl:justify-between flex-col"
+                    >
+                      <div>
+                        <p class="text-base">Stays + Potential reimbursement</p>
+                        <p class="text-xl">1 stay of 6 nights - Up to $3,560</p>
+                      </div>
+                      <div class="xl:mt-4 mt-[50px]">
+                        <a
+                          href="#"
+                          class="w-fit px-8 py-3 btn baseline border-2 rounded-none border-black"
+                          >Learn more about this study
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Third Element -->
+              <div
+                class="bg-lightblue xxl:w-[910px] xl:w-[910px] lg:w-[510px] md:w-[510px] w-[320px] h-fit"
+              >
+                <div class="px-[60px] py-[40px]">
+                  <p class="text-xl">Downtown Miami Clinic Center</p>
+                  <h3 class="text-5xl py-2">Diabetes type B</h3>
+                  <div class="mt-9">
+                    <div>
+                      <p class="text-base">Overall criteria</p>
+                      <p class="text-xl">
+                        Healthy, non-smoking adults in Miami
+                      </p>
+                    </div>
+                    <div class="mt-4">
+                      <p class="text-base">Age</p>
+                      <p class="text-xl">18-60</p>
+                    </div>
+                    <div
+                      class="mt-4 flex xl:flex-row xl:justify-between flex-col"
+                    >
+                      <div>
+                        <p class="text-base">Stays + Potential reimbursement</p>
+                        <p class="text-xl">1 stay of 6 nights - Up to $3,560</p>
+                      </div>
+                      <div class="xl:mt-4 mt-[50px]">
+                        <a
+                          href="#"
+                          class="w-fit px-8 py-3 btn baseline border-2 rounded-none border-black"
+                          >Learn more about this study
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Fourth Element -->
+              <div
+                class="bg-lightblue xxl:w-[910px] xl:w-[910px] lg:w-[510px] md:w-[510px] w-[320px] h-fit"
               >
                 <div class="px-[60px] py-[40px]">
                   <p class="text-xl">Downtown Miami Clinic Center</p>
@@ -937,6 +1010,7 @@
     </footer>
 
     <script src="js/flowbite.js"></script>
+    <script src="js/tiny-slider.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

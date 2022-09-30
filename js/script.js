@@ -34,3 +34,43 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
     }
   });
 });
+
+// SLICK
+// $(document).ready(function () {
+//   $(".carousel__inner").slick({
+//     dots: true,
+//     infinite: true,
+//     speed: 300,
+//     slidesToShow: 1,
+//     adaptiveHeight: true,
+//     prevArrow:
+//       '<button type="button" class="slick-prev"><i class="icon-left"></i></button',
+//     nextArrow:
+//       '<button type="button" class="slick-prev"><i class="icon-right"></i></button',
+//   });
+// });
+
+// TINY SLIDER
+
+const slider = tns({
+  container: ".carousel__inner",
+  slideBy: "page",
+  autoplay: false,
+  controls: false,
+  responsive: {
+    375: {
+      items: 1,
+    },
+    834: {
+      items: 2,
+    },
+  },
+});
+
+document.querySelector(".prev").addEventListener("click", function () {
+  slider.goTo("prev");
+});
+
+document.querySelector(".next").addEventListener("click", function () {
+  slider.goTo("next");
+});
