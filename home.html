@@ -174,8 +174,10 @@
       </section>
 
       <!-- Carousel SECTION -->
-      <section class="mt-[200px]">
-        <div class="container xxl:pl-44 xl:pl-24 lg:pl-14 pl-10 md:pl-10">
+      <section class="mt-[200px] relative">
+        <div
+          class="container xxl:pl-44 xl:pl-24 lg:pl-14 pl-10 md:pl-10 mx-auto overflow-hidden"
+        >
           <!-- CLINICAL STUDY INFO -->
           <div>
             <div>
@@ -200,8 +202,10 @@
                   Browse all studies
                 </a>
               </div>
-              <div>
-                <button class="carousel__button prev">
+              <div
+                class="md:inline-block md:relative absolute md:top-0 md:left-0 top-[1000px] left-[170px]"
+              >
+                <button class="carousel__button prev mr-[50px]">
                   <img src="img/left-arrow.svg" alt="" />
                 </button>
                 <button class="carousel__button next">
@@ -211,9 +215,9 @@
             </div>
           </div>
           <!-- STUDY COROUSEL -->
-          <div class="carousel">
+          <div class="carousel md:w-[2000px]">
             <div
-              class="mt-20 flex flex-row flex-shrink-0 gap-20 relative carousel__inner"
+              class="mt-20 flex flex-row lg:gap-20 md:gap-10 carousel__inner"
             >
               <!-- First Element -->
               <div
@@ -243,7 +247,7 @@
                       <div class="xl:mt-4 mt-[50px]">
                         <a
                           href="#"
-                          class="w-fit px-8 py-3 btn baseline border-2 rounded-none border-black"
+                          class="w-fit px-3 py-3 baseline border-2 rounded-none border-black text-base leading-[24px]"
                           >Learn more about this study
                         </a>
                       </div>
@@ -253,7 +257,7 @@
               </div>
               <!-- Second Element -->
               <div
-                class="bg-lightblue xxl:w-[910px] xl:w-[910px] lg:w-[510px] md:w-[510px] w-[320px] h-fit"
+                class="bg-lightpurple xxl:w-[910px] xl:w-[910px] lg:w-[510px] md:w-[510px] w-[320px] h-fit"
               >
                 <div class="px-[60px] py-[40px]">
                   <p class="text-xl">Downtown Miami Clinic Center</p>
@@ -289,7 +293,7 @@
               </div>
               <!-- Third Element -->
               <div
-                class="bg-lightblue xxl:w-[910px] xl:w-[910px] lg:w-[510px] md:w-[510px] w-[320px] h-fit"
+                class="bg-lightgreen xxl:w-[910px] xl:w-[910px] lg:w-[510px] md:w-[510px] w-[320px] h-fit"
               >
                 <div class="px-[60px] py-[40px]">
                   <p class="text-xl">Downtown Miami Clinic Center</p>
@@ -367,7 +371,7 @@
       <!-- Benefits -->
       <section class="mt-[200px]">
         <div
-          class="container xxl:pl-14 xl:pl-24 lg:pl-14 md:pl-10 pl-10 relative"
+          class="container xxl:pl-14 xl:pl-24 lg:pl-14 md:pl-10 pl-10 md:mx-3 mx-auto relative"
         >
           <div class="flex xl:flex-row md:gap-32 lg:flex-col flex-col">
             <div>
@@ -463,7 +467,9 @@
 
       <!-- OUR PROCESS -->
       <section class="mt-[200px]">
-        <div class="container xxl:pl-14 xl:pl-24 lg:pl-14 md:pl-10 pl-10">
+        <div
+          class="container xxl:pl-14 xl:pl-24 lg:pl-14 md:pl-10 pl-10 mx-auto"
+        >
           <div class="flex md:flex-row flex-col gap-10">
             <div>
               <img class="w-[180px] h-[180px]" src="img/circles.png" alt="" />
@@ -585,7 +591,7 @@
       <section class="mt-[200px]">
         <div class="container mx-auto relative">
           <div
-            class="xxl:w-[620xp] xl:w-[620px] lg:w-[420px] md:w-[420px] w-[330px] xl:ml-[180px] md:ml-10"
+            class="xxl:w-[620xp] xl:w-[620px] lg:w-[420px] md:w-[420px] w-[330px] xl:ml-[180px] md:ml-10 mx-auto"
           >
             <h2
               class="xl:text-[64px] md:text-[48px] text-[36px] leading-[83px]"
@@ -872,7 +878,7 @@
               development of the future medicine.
             </p>
           </div>
-          <div class="bg-white w-full m-1 pl-10 h-fit">
+          <div class="bg-white w-full m-1 pl-10">
             <div
               class="xl:pl-10 xl:pr-[350px] lg:pl-[130px] mx-[12px] pt-[70px]"
             >
@@ -945,12 +951,14 @@
                     >
                   </div>
                 </div>
-                <a href="#" class="bg-black text-white px-8 py-4">Next</a>
-                <a
-                  href="#"
-                  class="border-2 border-black bg-white text-black px-8 py-4"
-                  >I'd rather not say</a
-                >
+                <div class="mb-10">
+                  <a href="#" class="bg-black text-white px-8 py-4">Next</a>
+                  <a
+                    href="#"
+                    class="border-2 border-black bg-white text-black px-8 py-4"
+                    >I'd rather not say</a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -960,7 +968,9 @@
 
     <footer id="footer" class="mt-[200px]">
       <div class="container mt-28 mx-auto md:w-[1920px] md:h-[690px]">
-        <div class="flex md:flex-row flex-col-reverse justify-between">
+        <div
+          class="flex md:flex-row flex-col-reverse md:justify-between justify-self-center"
+        >
           <div>
             <a href="#">
               <img src="img/reserka-logo.svg" alt="Reserka Logo" />
@@ -974,7 +984,9 @@
           </div>
         </div>
         <div>
-          <div class="flex lg:flex-row flex-col gap-5 justify-between">
+          <div
+            class="flex lg:flex-row flex-col gap-20 md:justify-between justify-center"
+          >
             <div>
               <p class="mb-6 text-lighttext">Sitemap</p>
               <div class="flex flex-col md:flex-wrap md:h-[160px] md:w-[175px]">
@@ -1009,16 +1021,7 @@
       </div>
     </footer>
 
-    <script src="../node_modules/flowbite/dist/flowbite.js"></script>
-    <!-- <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-1.11.0.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-    ></script>
-    <script src="js/slick.min.js"></script> -->
+    <script src="js/flowbite.js"></script>
     <script src="js/tiny-slider.js"></script>
     <script src="js/script.js"></script>
   </body>
