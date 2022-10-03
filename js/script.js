@@ -57,6 +57,7 @@ const slider = tns({
   slideBy: "1",
   autoplay: false,
   controls: false,
+  touch: true,
   responsive: {
     375: {
       items: 1,
