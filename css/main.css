@@ -1228,6 +1228,14 @@ input:checked + .toggle-bg {
   left: 200px;
 }
 
+.top-\[1150px\] {
+  top: 1150px;
+}
+
+.top-\[1050px\] {
+  top: 1050px;
+}
+
 .z-50 {
   z-index: 50;
 }
