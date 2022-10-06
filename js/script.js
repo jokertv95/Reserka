@@ -92,3 +92,24 @@ document.querySelector(".prev").addEventListener("click", function () {
 document.querySelector(".next").addEventListener("click", function () {
   slider.goTo("next");
 });
+
+// GOOGLE MAP
+let map;
+
+function initMap() {
+  // The location of Uluru
+  const Reserka = { lat: 25.686509159041847, lng: -80.37084807515956 };
+  // 25.686509159041847, -80.37084807515956
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 17,
+    center: Reserka,
+    mapId: "ca62ed435509f667",
+  });
+
+  const marker1 = new google.maps.Marker({
+    position: Reserka,
+    map: map,
+  });
+}
+window.initMap = initMap;

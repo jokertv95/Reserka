@@ -157,7 +157,7 @@
           class="container z-10 absolute inset-x-0 bottom-0 mb-36 xxl:pl-44 xl:pl-24 lg:pl-14 md:pl-10 px-6"
         >
           <h1
-            class="xxl:w-[1000px] xl:w-[840px] lg:w-[680px] md:w-[650px] w-full xxl:text-[100px] xl:text-[80px] lg:text-[64px] md:text-[64px] text-5xl leading-[130%] md:inline-block hidden"
+            class="xxl:w-[1000px] xl:w-[840px] lg:w-[680px] md:w-[650px] w-full xxl:text-[100px] xl:text-[80px] lg:text-[64px] md:text-[64px] text-5xl leading-[130%]"
           >
             Want to know more about clicial studies?
           </h1>
@@ -173,6 +173,7 @@
 
       <!-- Contact Us -->
       <section class="mt-[200px]">
+        x§
         <div class="container flex flex-col mx-auto">
           <div class="w-[520px]">
             <p class="text-base uppercase text-lighttext leading-[22px]">
@@ -254,8 +255,10 @@
                 </p>
               </div>
             </div>
-            <div>
-              <img src="img/Rectangle.png" alt="" />
+            <div
+              class="lg:w-[634px] lg:h-[400px] md:w-[754px] md:h-[472px] w-[328px] h-[204px]"
+            >
+              <div id="map"></div>
             </div>
           </div>
         </div>
@@ -263,24 +266,30 @@
     </main>
 
     <footer id="footer">
-      <div class="container mt-28 mx-auto md:w-[1920px] md:h-[690px]">
-        <div class="flex justify-between">
-          <div>
-            <a href="#">
+      <div class="container mt-10 md:mx-auto px-6 overflow-x-hidden">
+        <div
+          class="flex md:flex-row flex-col-reverse md:justify-between items-center xxl:w-[1920px] xl:w-[1440px] lg:w-[1000px] md:w-[834px] w-[330px]"
+        >
+          <div class="flex flex-col md:items-start items-center">
+            <a href="index.html" class="text-center">
               <img src="img/reserka-logo.svg" alt="Reserka Logo" />
             </a>
-            <p class="mt-5">
+            <p class="mt-5 md:text-start text-center">
               Let's build a better future of medicine together!
             </p>
           </div>
-          <div>
+          <div class="flex">
             <img src="img/circle.png" alt="gradient circle" />
           </div>
         </div>
-        <div>
-          <div class="flex flex-row justify-between">
+        <div
+          class="xxl:w-[120rem] xl:w-[90rem] lg:w-[62rem] md-[52rem] md:h-[43rem] w-[20rem]"
+        >
+          <div
+            class="flex md:flex-row flex-col gap-36 md:justify-between justify-between"
+          >
             <div>
-              <p class="mb-6 text-lighttext">Sitemap</p>
+              <p class="mb-6 text-lighttext uppercase">Sitemap</p>
               <div class="flex flex-col md:flex-wrap md:h-[160px] md:w-[175px]">
                 <div class="flex flex-col">
                   <a class="mb-6" href="#">Current Trials</a>
@@ -295,8 +304,8 @@
                 </div>
               </div>
             </div>
-            <div class="mr-40 md:w-[650px]">
-              <p class="mb-6 text-lighttext">Location</p>
+            <div class="lg:mr-40 md:w-[650px]">
+              <p class="mb-6 text-lighttext upper">Location</p>
               <h4 class="text-4xl mb-8">Reserka Miami Clinic Center</h4>
 
               <p class="text-base text-lighttext mb-3">Adress</p>
@@ -312,6 +321,11 @@
         </div>
       </div>
     </footer>
+
     <script src="js/script.js"></script>
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwtxBqa2yfMWHP28mTDBFqGmcB3FMEjSU&callback=initMap"
+    ></script>
   </body>
 </html>
