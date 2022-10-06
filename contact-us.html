@@ -4,231 +4,263 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fontello.css" />
     <link rel="stylesheet" href="css/main.css" />
     <title>Contact Us</title>
   </head>
   <body>
     <!-- NAV -->
-    <!-- NAV -->
-    <nav
-      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3"
-    >
-      <!-- FLEX container -->
-      <div
-        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+    <header>
+      <nav
+        class="top-0 absolute z-50 w-full mx-auto flex flex-wrap items-center justify-between px-10 py-3"
       >
-        <!-- LOGO -->
+        <!-- FLEX container -->
         <div
-          class="w-fit relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+          class="container px-4 mx-auto flex flex-wrap items-center justify-between"
         >
-          <img src="img/reserka-logo.svg" alt="Logo Reserka" />
-        </div>
-        <!-- MENU ITEMS -->
-        <div class="hidden space-x-6 pt-2 md:flex items-center">
-          <a href="sponsors.html" class="hover:text-darkGrayishBlue"
-            >Sponsors</a
-          >
-          <div class="">
-            <div class="group inline-block relative">
-              <button class="py-2 px-4 rounded inline-flex items-center">
-                <span class="mr-1">Clinical Trials</span>
-                <svg
-                  class="fill-current h-4 w-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                  />
-                </svg>
-              </button>
-              <ul class="absolute hidden pt-1 group-hover:block">
-                <li class="">
-                  <a
-                    class="rounded-t py-2 px-4 block whitespace-no-wrap"
-                    href="#"
-                    >Current Trials</a
-                  >
-                </li>
-                <li class="">
-                  <a class="py-2 px-4 block whitespace-no-wrap" href="#"
-                    >For Sponsors</a
-                  >
-                </li>
-                <li class="">
-                  <a
-                    class="rounded-b py-2 px-4 block whitespace-no-wrap"
-                    href="#"
-                    >Process</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <a href="about-us.html" class="hover:text-darkGrayishBlue"
-            >About Us</a
-          >
-          <a href="team.html" class="hover:text-darkGrayishBlue">Team</a>
-          <a href="faq.html" class="hover:text-darkGrayishBlue">FAQ</a>
-          <a href="contact-us.html" class="hover:text-darkGrayishBlue"
-            >Contact</a
-          >
-          <!-- BUTTON -->
-          <a
-            href="#"
-            class="hidden md:inline-block p-3 px-6 pt-2 text-white bg-black baseline"
-            >Apply for clinical trial</a
-          >
-        </div>
-
-        <!-- HAMBURGER ICON -->
-
-        <button
-          class="block hamburger md:hidden focus:outline-none"
-          id="menu-btn"
-        >
-          <span class="hamburger-top"></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-bottom"></span>
-        </button>
-      </div>
-
-      <!-- MOBILE MENU -->
-
-      <div class="md:hidden">
-        <div
-          id="menu"
-          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
-        >
-          <a href="sponsors.html">Sponsors</a>
-          <div class="">
-            <div class="group inline-block relative">
-              <button class="py-2 px-4 rounded inline-flex items-center">
-                <span class="mr-1">Clinical Trials</span>
-                <svg
-                  class="fill-current h-4 w-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                  />
-                </svg>
-              </button>
-              <ul class="absolute hidden pt-1 group-hover:block">
-                <li class="">
-                  <a
-                    class="rounded-t py-2 px-4 block whitespace-no-wrap"
-                    href="all-trials.html"
-                    >Current Trials</a
-                  >
-                </li>
-                <li class="">
-                  <a
-                    class="py-2 px-4 block whitespace-no-wrap"
-                    href="sponsors.html"
-                    >For Sponsors</a
-                  >
-                </li>
-                <li class="">
-                  <a
-                    class="rounded-b py-2 px-4 block whitespace-no-wrap"
-                    href="#"
-                    >Process</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <a href="about-us.html">About Us</a>
-          <a href="team.html">Team</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact-us.html">Contact</a>
-        </div>
-      </div>
-    </nav>
-    <div class="md:w-[1920px] h-[700px] bg-no-repeat bg-cover background">
-      <!-- HERO -->
-      <section id="hero" class="md:w-[1920px] md:h-[1000px]">
-        <!-- FLEX CONTAINER -->
-        <div
-          class="container flex flex-row mx-auto relative h-1/2 md:space-y-0"
-        >
-          <!-- TEXT IN LEFT SIDE -->
+          <!-- LOGO -->
           <div
-            class="flex mb-32 absolute top-1/4 inset-x-0 bottom-0 flex-col w-[1000px]"
+            class="w-fit relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
           >
-            <h1 class="max-w-md text-4xl text-center md:text-7xl md:text-left">
-              Want to know more about clicial studies?
-            </h1>
-            <p
-              class="max-w-sm text-center text-xl mt-9 text-darkGrayishBlue md:text-left"
+            <img src="img/reserka-logo.svg" alt="Logo Reserka" />
+          </div>
+          <!-- MENU ITEMS -->
+          <div class="hidden space-x-6 pt-2 md:flex items-center">
+            <a href="sponsors.html" class="hover:text-darkGrayishBlue"
+              >Sponsors</a
             >
-              Contact our study coordinator to check if you qualify for one of
-              the ongoing trials.
+            <div class="">
+              <div class="group inline-block relative">
+                <button class="py-2 px-4 rounded inline-flex items-center">
+                  <span class="mr-1">Clinical Trials</span>
+                  <svg
+                    class="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+                  </svg>
+                </button>
+                <ul class="absolute hidden pt-1 group-hover:block">
+                  <li class="">
+                    <a
+                      class="rounded-t py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >Current Trials</a
+                    >
+                  </li>
+                  <li class="">
+                    <a class="py-2 px-4 block whitespace-no-wrap" href="#"
+                      >For Sponsors</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="rounded-b py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >Process</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a href="about-us.html" class="hover:text-darkGrayishBlue"
+              >About Us</a
+            >
+            <a href="team.html" class="hover:text-darkGrayishBlue">Team</a>
+            <a href="faq.html" class="hover:text-darkGrayishBlue">FAQ</a>
+            <a href="contact-us.html" class="hover:text-darkGrayishBlue"
+              >Contact</a
+            >
+            <!-- BUTTON -->
+            <a
+              href="#"
+              class="hidden md:inline-block p-3 px-6 pt-2 text-white bg-black baseline"
+              >Apply for clinical trial</a
+            >
+          </div>
+
+          <!-- HAMBURGER ICON -->
+
+          <button
+            class="block hamburger md:hidden focus:outline-none"
+            id="menu-btn"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+
+        <!-- MOBILE MENU -->
+
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <a href="sponsors.html">Sponsors</a>
+            <div class="">
+              <div class="group inline-block relative">
+                <button class="py-2 px-4 rounded inline-flex items-center">
+                  <span class="mr-1">Clinical Trials</span>
+                  <svg
+                    class="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+                  </svg>
+                </button>
+                <ul class="absolute hidden pt-1 group-hover:block">
+                  <li class="">
+                    <a
+                      class="rounded-t py-2 px-4 block whitespace-no-wrap"
+                      href="all-trials.html"
+                      >Current Trials</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="py-2 px-4 block whitespace-no-wrap"
+                      href="sponsors.html"
+                      >For Sponsors</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="rounded-b py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >Process</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a href="about-us.html">About Us</a>
+            <a href="team.html">Team</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact-us.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero SECTION -->
+      <section class="hero_section">
+        <div
+          class="container z-10 absolute inset-x-0 bottom-0 mb-36 xxl:pl-44 xl:pl-24 lg:pl-14 md:pl-10 px-6"
+        >
+          <h1
+            class="xxl:w-[1000px] xl:w-[840px] lg:w-[680px] md:w-[650px] w-full xxl:text-[100px] xl:text-[80px] lg:text-[64px] md:text-[64px] text-5xl leading-[130%] md:inline-block hidden"
+          >
+            Want to know more about clicial studies?
+          </h1>
+
+          <p
+            class="md:text-xl text-base xxl:w-[580px] xl:w-[400px] lg:w-[430px] md:w-[430px] w-full"
+          >
+            Contact our study coordinator to check if you qualify for one of the
+            ongoing trials.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Us -->
+      <section class="mt-[200px]">
+        <div class="container flex flex-col mx-auto">
+          <div class="w-[520px]">
+            <p class="text-base uppercase text-lighttext leading-[22px]">
+              Contact us
             </p>
+            <h3
+              class="lg:text-5xl md:text-5xl text-4xl md:leading-[62px] leading-[47px] mt-2"
+            >
+              How can we help you?
+            </h3>
+            <p
+              class="md:text-xl text-base md:leading-[32px] leading-[26px] mt-2"
+            >
+              Contacting our expert is the best and fastest way to find the
+              right trial for you. Call us or write an e-mail to get all the
+              necessary information and answers to your questions.
+            </p>
+          </div>
+          <div class="flex flex-row gap-9 mt-20 pt-18">
+            <div>
+              <p class="uppercase text-lighttext text-base leading-[22px]">
+                Genaral questions
+              </p>
+              <p
+                class="md:text-5xl text-4xl md:leading-[62px] leading-[47px] mt-4"
+              >
+                <a href="tel:+13055423642">+1 305-542-3642</a>
+              </p>
+            </div>
+            <div class="ml-64">
+              <p class="uppercase text-lighttext text-base leading-[22px]">
+                Email inquires
+              </p>
+              <p
+                class="md:text-5xl text-4xl md:leading-[62px] leading-[47px] mt-4"
+              >
+                <a href="mailto:contact@reserka.com">contact@reserka.com</a>
+              </p>
+            </div>
           </div>
         </div>
       </section>
-    </div>
 
-    <!-- Contact Us -->
-    <section class="mt-32">
-      <div class="container flex flex-col mx-auto">
-        <div class="w-[520px]">
-          <p class="text-base">contact us</p>
-          <h3 class="text-5xl mt-2">How can we help you?</h3>
-          <p class="text-xl mt-2">
-            Contacting our expert is the best and fastest way to find the right
-            trial for you. Call us or write an e-mail to get all the necessary
-            information and answers to your questions.
-          </p>
-        </div>
-        <div class="flex flex-row gap-9 mt-20 pt-18">
-          <div>
-            <p>genaral questions</p>
-            <p class="text-5xl mt-4">
-              <a href="tel:+13055423642">+1 305-542-3642</a>
+      <!-- Navigation -->
+      <section class="mt-32">
+        <div class="container mx-auto">
+          <div class="md:w-[462px] w-[328px]">
+            <p class="uppercase text-lighttext text-base leading-[22px]">
+              You can find us here
+            </p>
+            <h3
+              class="md:text-5xl text-4xl md:leading-[62px] leading-[47px] mt-4"
+            >
+              Clinical trials in Miami
+            </h3>
+            <p
+              class="ms:text-xl text-base md:leading-[32px] leading-[26px] mt-4"
+            >
+              We invite you to visit our newly established clinic.
             </p>
           </div>
-          <div class="ml-64">
-            <p>email inquires</p>
-            <p class="text-5xl mt-4">
-              <a href="mailto:contact@reserka.com">contact@reserka.com</a>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Navigation -->
-    <section class="mt-32">
-      <div class="container mx-auto">
-        <div>
-          <p>You can find us here</p>
-          <h3 class="text-5xl mt-4">Clinical trials in Miami</h3>
-          <p class="text-xl mt-4">
-            We invite you to visit our newly established clinic.
-          </p>
-        </div>
-        <div class="flex flex-row gap-36 mt-14">
-          <div class="mt-14">
-            <h4 class="text-4xl">Reserka Clinic</h4>
-            <p>
-              10860 SW 88th Street, #100, <br />
-              Miami, FL, 33176
-            </p>
+          <div class="flex flex-row gap-36 mt-14">
+            <div class="mt-14">
+              <h4 class="text-4xl leading-[50px]">Reserka Clinic</h4>
+              <p class="md:text-xl text-base md:leading-[32px] leading-[26px]">
+                10860 SW 88th Street, #100, <br />
+                Miami, FL, 33176
+              </p>
+              <span
+                class="text-lighttext md:text-xl md:leading-[32xp] leading-[26px]"
+                >Mo-Fr
+                <span class="text-black">9:00 AM – 8:00 PM</span>
+              </span>
+              <div class="flex flex-row">
+                <p><i class="icon-cab"></i><a href="#">Google Maps</a></p>
+                <p>
+                  <i class="icon-phone-outline"></i
+                  ><a href="tel:+13055423642">305-542-3642</a>
+                </p>
+              </div>
+            </div>
             <div>
-              <p><a href="#">Google Maps</a></p>
-              <p><a href="tel:+13055423642">305-542-3642</a></p>
+              <img src="img/Rectangle.png" alt="" />
             </div>
           </div>
-          <div>
-            <img src="img/Rectangle.png" alt="" />
-          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer id="footer">
       <div class="container mt-28 mx-auto md:w-[1920px] md:h-[690px]">

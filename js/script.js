@@ -92,3 +92,13 @@ document.querySelector(".prev").addEventListener("click", function () {
 document.querySelector(".next").addEventListener("click", function () {
   slider.goTo("next");
 });
+
+// Showe more
+
+document.querySelector(".show_more").slice(0, 2).show();
+document.querySelector(".show_btn").addEventListener("click", function () {
+  document.querySelector(".show_more:hidden").slice(0, 3).slideDown();
+  if (document.querySelector(".show_more:hidden").length == 0) {
+    document.querySelector(".show_btn").fadeOut("slow");
+  }
+});
