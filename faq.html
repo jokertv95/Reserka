@@ -9,307 +9,430 @@
   </head>
   <body>
     <!-- NAV -->
-    <nav
-      class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3"
-    >
-      <!-- FLEX container -->
-      <div
-        class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+    <header>
+      <nav
+        class="top-0 absolute z-50 w-full mx-auto flex flex-wrap items-center justify-between px-10 py-3"
       >
-        <!-- LOGO -->
+        <!-- FLEX container -->
         <div
-          class="w-fit relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+          class="container px-4 mx-auto flex flex-wrap items-center justify-between"
         >
-          <img src="img/reserka-logo.svg" alt="Logo Reserka" />
-        </div>
-        <!-- MENU ITEMS -->
-        <div class="hidden space-x-6 pt-2 md:flex items-center">
-          <a href="sponsors.html" class="hover:text-darkGrayishBlue"
-            >Sponsors</a
+          <!-- LOGO -->
+          <div
+            class="w-fit relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
           >
-          <div class="">
-            <div class="group inline-block relative">
-              <button class="py-2 px-4 rounded inline-flex items-center">
-                <span class="mr-1">Clinical Trials</span>
-                <svg
-                  class="fill-current h-4 w-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                  />
-                </svg>
-              </button>
-              <ul class="absolute hidden pt-1 group-hover:block">
-                <li class="">
-                  <a
-                    class="rounded-t py-2 px-4 block whitespace-no-wrap"
-                    href="#"
-                    >Current Trials</a
-                  >
-                </li>
-                <li class="">
-                  <a class="py-2 px-4 block whitespace-no-wrap" href="#"
-                    >For Sponsors</a
-                  >
-                </li>
-                <li class="">
-                  <a
-                    class="rounded-b py-2 px-4 block whitespace-no-wrap"
-                    href="#"
-                    >Process</a
-                  >
-                </li>
-              </ul>
-            </div>
+            <img src="img/reserka-logo.svg" alt="Logo Reserka" />
           </div>
-          <a href="about-us.html" class="hover:text-darkGrayishBlue"
-            >About Us</a
+          <!-- MENU ITEMS -->
+          <div class="hidden space-x-6 pt-2 md:flex items-center">
+            <a href="sponsors.html" class="hover:text-darkGrayishBlue"
+              >Sponsors</a
+            >
+            <div class="">
+              <div class="group inline-block relative">
+                <button class="py-2 px-4 rounded inline-flex items-center">
+                  <span class="mr-1">Clinical Trials</span>
+                  <svg
+                    class="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+                  </svg>
+                </button>
+                <ul class="absolute hidden pt-1 group-hover:block">
+                  <li class="">
+                    <a
+                      class="rounded-t py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >Current Trials</a
+                    >
+                  </li>
+                  <li class="">
+                    <a class="py-2 px-4 block whitespace-no-wrap" href="#"
+                      >For Sponsors</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="rounded-b py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >Process</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a href="about-us.html" class="hover:text-darkGrayishBlue"
+              >About Us</a
+            >
+            <a href="team.html" class="hover:text-darkGrayishBlue">Team</a>
+            <a href="faq.html" class="hover:text-darkGrayishBlue">FAQ</a>
+            <a href="contact-us.html" class="hover:text-darkGrayishBlue"
+              >Contact</a
+            >
+            <!-- BUTTON -->
+            <a
+              href="#"
+              class="hidden md:inline-block p-3 px-6 pt-2 text-white bg-black baseline"
+              >Apply for clinical trial</a
+            >
+          </div>
+
+          <!-- HAMBURGER ICON -->
+
+          <button
+            class="block hamburger md:hidden focus:outline-none"
+            id="menu-btn"
           >
-          <a href="team.html" class="hover:text-darkGrayishBlue">Team</a>
-          <a href="faq.html" class="hover:text-darkGrayishBlue">FAQ</a>
-          <a href="contact-us.html" class="hover:text-darkGrayishBlue"
-            >Contact</a
-          >
-          <!-- BUTTON -->
-          <a
-            href="#"
-            class="hidden md:inline-block p-3 px-6 pt-2 text-white bg-black baseline"
-            >Apply for clinical trial</a
-          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
         </div>
 
-        <!-- HAMBURGER ICON -->
+        <!-- MOBILE MENU -->
 
-        <button
-          class="block hamburger md:hidden focus:outline-none"
-          id="menu-btn"
-        >
-          <span class="hamburger-top"></span>
-          <span class="hamburger-middle"></span>
-          <span class="hamburger-bottom"></span>
-        </button>
-      </div>
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <a href="sponsors.html">Sponsors</a>
+            <div class="">
+              <div class="group inline-block relative">
+                <button class="py-2 px-4 rounded inline-flex items-center">
+                  <span class="mr-1">Clinical Trials</span>
+                  <svg
+                    class="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+                  </svg>
+                </button>
+                <ul class="absolute hidden pt-1 group-hover:block">
+                  <li class="">
+                    <a
+                      class="rounded-t py-2 px-4 block whitespace-no-wrap"
+                      href="all-trials.html"
+                      >Current Trials</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="py-2 px-4 block whitespace-no-wrap"
+                      href="sponsors.html"
+                      >For Sponsors</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="rounded-b py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >Process</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a href="about-us.html">About Us</a>
+            <a href="team.html">Team</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact-us.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-      <!-- MOBILE MENU -->
-
-      <div class="md:hidden">
+    <main>
+      <!-- HERO -->
+      <section class="hero_section">
         <div
-          id="menu"
-          class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          class="container z-10 absolute inset-x-0 bottom-0 mb-36 xxl:pl-44 xl:pl-24 lg:pl-14 md:pl-10 px-6"
         >
-          <a href="sponsors.html">Sponsors</a>
-          <div class="">
-            <div class="group inline-block relative">
-              <button class="py-2 px-4 rounded inline-flex items-center">
-                <span class="mr-1">Clinical Trials</span>
-                <svg
-                  class="fill-current h-4 w-4"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
-                  />
-                </svg>
-              </button>
-              <ul class="absolute hidden pt-1 group-hover:block">
-                <li class="">
-                  <a
-                    class="rounded-t py-2 px-4 block whitespace-no-wrap"
-                    href="all-trials.html"
-                    >Current Trials</a
-                  >
-                </li>
-                <li class="">
-                  <a
-                    class="py-2 px-4 block whitespace-no-wrap"
-                    href="sponsors.html"
-                    >For Sponsors</a
-                  >
-                </li>
-                <li class="">
-                  <a
-                    class="rounded-b py-2 px-4 block whitespace-no-wrap"
-                    href="#"
-                    >Process</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <a href="about-us.html">About Us</a>
-          <a href="team.html">Team</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact-us.html">Contact</a>
-        </div>
-      </div>
-    </nav>
-
-    <div
-      class="w-full md:h-[800px] sm:h-[800px] h-[800px] absolute -z-10 top-0 bg-no-repeat bg-cover background overflow-hidden"
-    ></div>
-
-    <!-- HERO -->
-    <section id="hero" class="pb-96">
-      <!-- FLEX CONTAINER -->
-      <div
-        class="container mx-auto z-10 w-[300px] md:w-[1000px] h-[500px] pb-48 pt-54 sm:pt-36 md:pt-64 sm:px-8 md:px-32"
-      >
-        <div>
-          <h1 class="lg:text-[80px] w-[750px] md:text-[64px] text-5xl">
+          <h1
+            class="xxl:w-[1000px] xl:w-[840px] lg:w-[680px] md:w-[650px] w-full xxl:text-[100px] xl:text-[80px] lg:text-[64px] md:text-[64px] text-5xl leading-[130%]"
+          >
             Everything you want to know about clinical trials
           </h1>
-          <p class="md:text-xl text-base">
+
+          <p
+            class="md:text-xl text-base xxl:w-[580px] xl:w-[400px] lg:w-[430px] md:w-[430px] w-full"
+          >
             Read the FAQ or contact our advisor directly to choose the research
             that will work best for you.
           </p>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- FAQ -->
-    <section id="homeFaq">
-      <div class="container ml-48 mb-40 md:w-[950px]">
-        <div class="mb-20">
-          <p class="text-base">FAQ</p>
-          <h3 class="text-6xl">
-            Have a question in mind? Check what patients ask about frequently
-          </h3>
-        </div>
-        <div class="accordion mx-auto my-4">
-          <!-- 1 -->
-          <div class="accordion-item mx-0 mt-2 mb-16">
-            <div
-              class="accordion-item-header flex items-center font-bold relative cursor-pointer pl-4 py-3 text-3xl"
+      <!-- FAQ -->
+      <section class="mt-[200px]">
+        <div
+          class="container xxl:ml-[380px] xxl:mr-[580px] xl:ml-[250px] xl:mr-[230px] lg:ml-[60px] lg:mr-[275px] md:ml-[40px] md:mr-[130px]"
+        >
+          <div
+            class="xxl:w-[970px] xl:w-[970px] lg:w-[670px] md:w-[665px] w-[330px] px-6"
+          >
+            <p class="uppercase text-lighttext text-base leading-[22px]">Faq</p>
+            <h3
+              class="xxl:text-[64px] xl:text-[64px] xl:leading-[83px] lg:text-[48px] md:text-[48px] md:leading-[62px] text-[36px] leading-[50px]"
             >
-              What is a clinical trial?
-            </div>
-            <div class="accordion-item-body overflow-hidden">
-              <div
-                class="accordion-item-body-content p-4 leading-normal bg-lightgreen"
-              >
-                Clinical trials are experiments or observations done in clinical
-                research. a clinical trial could involve new drugs, medical
-                devices, biologicals, vaccines, surgical and other medical
-                treatments and procedures.
-              </div>
-            </div>
+              Have a question in mind? Check what patients ask about frequently
+            </h3>
           </div>
-          <!-- 2 -->
-          <div class="accordion-item mx-0 mt-2 mb-14">
+          <div
+            class="xxl:w-[970px] xl:w-[970px] lg:w-[670px] md:w-[665px] w-[330px] px-6"
+          >
             <div
-              class="accordion-item-header flex items-center font-bold relative cursor-pointer pl-4 py-3 text-3xl"
+              id="accordion-flush"
+              data-accordion="collapse"
+              data-active-classes="bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+              data-inactive-classes="text-gray-500 dark:text-gray-400"
             >
-              Who can participate in a clinical trial?
-            </div>
-            <div class="accordion-item-body overflow-hidden">
+              <h2 id="accordion-flush-heading-1">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full py-5 font-medium text-left border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+                  data-accordion-target="#accordion-flush-body-1"
+                  aria-expanded="true"
+                  aria-controls="accordion-flush-body-1"
+                >
+                  <span>What is a clinical trial?</span>
+                </button>
+              </h2>
               <div
-                class="accordion-item-body-content p-4 leading-normal bg-lightgreen"
+                id="accordion-flush-body-1"
+                class=""
+                aria-labelledby="accordion-flush-heading-1"
               >
-                Your eligibility may be based on your age, gender, overall
-                health, type and stage of a disease, treatment history, and
-                other conditions.
+                <div
+                  class="py-5 font-light border-b border-gray-200 dark:border-gray-700"
+                >
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    Clinical trials are experiments or observations done in
+                    clinical research. A clinical trial could involve new drugs,
+                    medical devices, biologicals, vaccines, surgical and other
+                    medical treatments and procedures.
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-          <!-- 3 -->
-          <div class="accordion-item mx-0 mt-2 mb-14">
-            <div
-              class="accordion-item-header flex items-center font-bold relative cursor-pointer pl-4 py-3 text-3xl"
-            >
-              What are the benefits of participating in a clinical trial?
-            </div>
-            <div class="accordion-item-body overflow-hidden">
+              <h2 id="accordion-flush-heading-2">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                  data-accordion-target="#accordion-flush-body-2"
+                  aria-expanded="false"
+                  aria-controls="accordion-flush-body-2"
+                >
+                  <span>Who can participate in a clinical trial?</span>
+                </button>
+              </h2>
               <div
-                class="accordion-item-body-content p-4 leading-normal bg-lightgreen"
+                id="accordion-flush-body-2"
+                class="hidden"
+                aria-labelledby="accordion-flush-heading-2"
               >
-                When enrolled in a clinical trial, you not only gain access to
-                cutting-edge & expert care, but you are participating in a
-                potential medical breakthrough that could help many more people
-                in the future.
+                <div
+                  class="py-5 font-light border-b border-gray-200 dark:border-gray-700"
+                >
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    Your eligibility may be based on your age, gender, overall
+                    health, type and stage of a disease, treatment history, and
+                    other conditions.
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-          <!-- 4 -->
-          <div class="accordion-item mx-0 mt-2 mb-14">
-            <div
-              class="accordion-item-header flex items-center font-bold relative cursor-pointer pl-4 py-3 text-3xl"
-            >
-              Who is part of a clinical trial?
-            </div>
-            <div class="accordion-item-body overflow-hidden">
+              <h2 id="accordion-flush-heading-3">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                  data-accordion-target="#accordion-flush-body-3"
+                  aria-expanded="false"
+                  aria-controls="accordion-flush-body-3"
+                >
+                  <span
+                    >What are the benefits of participating in a clinical trial?
+                  </span>
+                </button>
+              </h2>
               <div
-                class="accordion-item-body-content p-4 leading-normal bg-lightgreen"
+                id="accordion-flush-body-3"
+                class="hidden"
+                aria-labelledby="accordion-flush-heading-3"
               >
-                You will be monitored closely by top physicians, nurses,
-                pharmacist’s as well as researchers. Should the medical
-                treatment being tested in the clinical trial be effective, you
-                will be one of the first people to reap the benefits before it
-                is released to the public.
+                <div
+                  class="py-5 font-light border-b border-gray-200 dark:border-gray-700"
+                >
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    When enrolled in a clinical trial, you not only gain access
+                    to cutting-edge & expert care, but you are participating in
+                    a potential medical breakthrough that could help many more
+                    people in the future.
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-          <!-- 5 -->
-          <div class="accordion-item mx-0 mt-2 mb-14">
-            <div
-              class="accordion-item-header flex items-center font-bold relative cursor-pointer pl-4 py-3 text-3xl"
-            >
-              Clinical Trial phases
-            </div>
-            <div class="accordion-item-body overflow-hidden">
+              <h2 id="accordion-flush-heading-4">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                  data-accordion-target="#accordion-flush-body-4"
+                  aria-expanded="false"
+                  aria-controls="accordion-flush-body-4"
+                >
+                  <span>Who is part of a clinical trial? </span>
+                </button>
+              </h2>
               <div
-                class="accordion-item-body-content p-4 leading-normal bg-lightgreen"
+                id="accordion-flush-body-4"
+                class="hidden"
+                aria-labelledby="accordion-flush-heading-4"
               >
-                Your eligibility may be based on your age, gender, overall
-                health, type and stage of a disease, treatment history, and
-                other conditions.
+                <div
+                  class="py-5 font-light border-b border-gray-200 dark:border-gray-700"
+                >
+                  <p class="mb-2 text-gray-500 dark:text-gray-400">
+                    You will be monitored closely by top physicians, nurses,
+                    pharmacist’s as well as researchers. Should the medical
+                    treatment being tested in the clinical trial be effective,
+                    you will be one of the first people to reap the benefits
+                    before it is released to the public.
+                  </p>
+                </div>
               </div>
-            </div>
-          </div>
-          <!-- 6 -->
-          <div class="accordion-item mx-0 mt-2 mb-14">
-            <div
-              class="accordion-item-header flex items-center font-bold relative cursor-pointer pl-4 py-3 text-3xl"
-            >
-              Who can I talk to if I want to learn more about clinical trials?
-            </div>
-            <div class="accordion-item-body overflow-hidden">
-              <div
-                class="accordion-item-body-content p-4 leading-normal bg-lightgreen"
-              >
-                You can always talk to our clinical coordinators or physicians
-                as well as the principal investigator of the study to learn more
-                information about whether you qualify for a clinical trial, or
-                what the requirements may be for a specific trial.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
+              <h2 id="accordion-flush-heading-5">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                  data-accordion-target="#accordion-flush-body-5"
+                  aria-expanded="false"
+                  aria-controls="accordion-flush-body-5"
+                >
+                  <span>Clinical Trial phases </span>
+                </button>
+              </h2>
+              <div
+                id="accordion-flush-body-5"
+                class="hidden"
+                aria-labelledby="accordion-flush-heading-5"
+              >
+                <div
+                  class="py-5 font-light border-b border-gray-200 dark:border-gray-700"
+                >
+                  <span>
+                    <p>Phase 1</p>
+                    <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                      <li>Test drugs on healthy individuals</li>
+                      <li>Test for safety dosage and side effects</li>
+                    </ul>
+                  </span>
+                  <span>
+                    <p>Phase 2</p>
+                    <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                      <li>Test on larger group of effected individuals</li>
+                      <li>Test for efficiacy and side effects</li>
+                    </ul>
+                  </span>
+                  <span>
+                    <p>Phase 3</p>
+                    <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                      <li>Test on new and wider demographics</li>
+                      <li>
+                        Test for long term effectiveness and comparisons with
+                        other medications
+                      </li>
+                    </ul>
+                  </span>
+                  <span>
+                    <p>Phase FDA Approval</p>
+                    <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                      <li>
+                        Treatment determined effective and safe for public use
+                      </li>
+                    </ul>
+                  </span>
+                  <span>
+                    <p>Phase 5</p>
+                    <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                      <li>Continues to test for effectiveness and safety</li>
+                      <li>Can be taken of the market if necessary</li>
+                    </ul>
+                  </span>
+                </div>
+              </div>
+
+              <h2 id="accordion-flush-heading-6">
+                <button
+                  type="button"
+                  class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                  data-accordion-target="#accordion-flush-body-6"
+                  aria-expanded="false"
+                  aria-controls="accordion-flush-body-6"
+                >
+                  <span
+                    >Who can I talk to if I want to learn more about clinical
+                    trials?
+                  </span>
+                </button>
+              </h2>
+              <div
+                id="accordion-flush-body-6"
+                class="hidden"
+                aria-labelledby="accordion-flush-heading-6"
+              >
+                <div
+                  class="py-5 font-light border-b border-gray-200 dark:border-gray-700"
+                >
+                  <p class="mb-4 text-gray-500 dark:text-gray-400">
+                    You can always talk to our clinical coordinators or
+                    physicians as well as the principal investigator of the
+                    study to learn more information about whether you qualify
+                    for a clinical trial, or what the requirements may be for a
+                    specific trial.
+                  </p>
+                  <a href="#" class="bg-black text-white text-base px-8 py-3"
+                    >Qualify for trials</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- Footer -->
     <footer id="footer">
-      <div class="container mt-28 mx-auto md:w-[1920px] md:h-[690px]">
-        <div class="flex justify-between">
-          <div>
-            <a href="#">
+      <div
+        class="container mt-[120px] border-t-2 md:mx-auto px-6 overflow-x-hidden"
+      >
+        <div
+          class="flex md:flex-row flex-col-reverse md:justify-between items-center xxl:w-[1920px] xl:w-[1440px] lg:w-[1000px] md:w-[834px] w-[330px]"
+        >
+          <div class="flex flex-col md:items-start items-center">
+            <a href="index.html" class="text-center">
               <img src="img/reserka-logo.svg" alt="Reserka Logo" />
             </a>
-            <p class="mt-5">
+            <p class="mt-5 md:text-start text-center">
               Let's build a better future of medicine together!
             </p>
           </div>
-          <div>
+          <div class="flex">
             <img src="img/circle.png" alt="gradient circle" />
           </div>
         </div>
-        <div>
-          <div class="flex flex-row justify-between">
+        <div
+          class="xxl:w-[120rem] xl:w-[90rem] lg:w-[62rem] md-[52rem] md:h-[43rem] w-[20rem]"
+        >
+          <div
+            class="flex md:flex-row flex-col gap-36 md:justify-between justify-between"
+          >
             <div>
-              <p class="mb-6 text-lighttext">Sitemap</p>
+              <p class="mb-6 text-lighttext uppercase">Sitemap</p>
               <div class="flex flex-col md:flex-wrap md:h-[160px] md:w-[175px]">
                 <div class="flex flex-col">
                   <a class="mb-6" href="#">Current Trials</a>
@@ -324,8 +447,8 @@
                 </div>
               </div>
             </div>
-            <div class="mr-40 md:w-[650px]">
-              <p class="mb-6 text-lighttext">Location</p>
+            <div class="lg:mr-40 md:w-[650px]">
+              <p class="mb-6 text-lighttext upper">Location</p>
               <h4 class="text-4xl mb-8">Reserka Miami Clinic Center</h4>
 
               <p class="text-base text-lighttext mb-3">Adress</p>
@@ -341,6 +464,7 @@
         </div>
       </div>
     </footer>
+    <script src="js/flowbite.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
