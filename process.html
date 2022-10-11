@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=s, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/tiny-slider.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Process</title>
+  </head>
+  <body>
+    <!-- NAV -->
+    <header>
+      <nav
+        class="top-0 absolute z-50 w-full mx-auto flex flex-wrap items-center justify-between px-10 py-3"
+      >
+        <!-- FLEX container -->
+        <div
+          class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+        >
+          <!-- LOGO -->
+          <div
+            class="w-fit relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
+          >
+            <a href="index.html"
+              ><img src="img/reserka-logo.svg" alt="Logo Reserka"
+            /></a>
+          </div>
+          <!-- MENU ITEMS -->
+          <div class="hidden space-x-6 pt-2 md:flex items-center">
+            <a href="sponsors.html" class="hover:text-darkGrayishBlue"
+              >Sponsors</a
+            >
+            <div class="">
+              <div class="group inline-block relative">
+                <button class="py-2 px-4 rounded inline-flex items-center">
+                  <span class="mr-1">Clinical Trials</span>
+                  <svg
+                    class="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+                  </svg>
+                </button>
+                <ul class="absolute hidden pt-1 group-hover:block">
+                  <li class="">
+                    <a
+                      class="rounded-t py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >Current Trials</a
+                    >
+                  </li>
+                  <li class="">
+                    <a class="py-2 px-4 block whitespace-no-wrap" href="#"
+                      >For Sponsors</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="rounded-b py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >Process</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a href="about-us.html" class="hover:text-darkGrayishBlue"
+              >About Us</a
+            >
+            <a href="team.html" class="hover:text-darkGrayishBlue">Team</a>
+            <a href="faq.html" class="hover:text-darkGrayishBlue">FAQ</a>
+            <a href="contact-us.html" class="hover:text-darkGrayishBlue"
+              >Contact</a
+            >
+            <!-- BUTTON -->
+            <a
+              href="#"
+              class="hidden md:inline-block p-3 px-6 pt-2 text-white bg-black baseline"
+              >Apply for clinical trial</a
+            >
+          </div>
+
+          <!-- HAMBURGER ICON -->
+
+          <button
+            class="block hamburger md:hidden focus:outline-none"
+            id="menu-btn"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+
+        <!-- MOBILE MENU -->
+
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <a href="sponsors.html">Sponsors</a>
+            <div class="">
+              <div class="group inline-block relative">
+                <button class="py-2 px-4 rounded inline-flex items-center">
+                  <span class="mr-1">Clinical Trials</span>
+                  <svg
+                    class="fill-current h-4 w-4"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"
+                    />
+                  </svg>
+                </button>
+                <ul class="absolute hidden pt-1 group-hover:block">
+                  <li class="">
+                    <a
+                      class="rounded-t py-2 px-4 block whitespace-no-wrap"
+                      href="all-trials.html"
+                      >Current Trials</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="py-2 px-4 block whitespace-no-wrap"
+                      href="sponsors.html"
+                      >For Sponsors</a
+                    >
+                  </li>
+                  <li class="">
+                    <a
+                      class="rounded-b py-2 px-4 block whitespace-no-wrap"
+                      href="#"
+                      >Process</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <a href="about-us.html">About Us</a>
+            <a href="team.html">Team</a>
+            <a href="faq.html">FAQ</a>
+            <a href="contact-us.html">Contact</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero_section w-fit">
+        <div
+          class="container z-10 absolute inset-x-0 bottom-0 mb-36 xxl:pl-44 xl:pl-24 lg:pl-14 md:pl-10 px-6"
+        >
+          <h1
+            class="xxl:w-[1000px] xl:w-[840px] lg:w-[680px] md:w-[650px] w-fit xxl:text-[100px] xl:text-[80px] lg:text-[64px] md:text-[64px] text-5xl leading-[130%]"
+          >
+            Your health is in good hands
+          </h1>
+
+          <p
+            class="md:text-xl text-base xxl:w-[580px] xl:w-[400px] lg:w-[430px] md:w-[430px] w-full"
+          >
+            We want you to be well informed and feel as comfortable as possible
+            with us. That's why we've prepared a detailed guide to help you
+            learn about the process of participating in our clinical trials.
+          </p>
+        </div>
+      </section>
+
+      <!-- Process Slider -->
+      <section>
+        <div class="container mt-[160px] slider_process">
+          <!-- First -->
+          <div class="flex flex-row gap-[260px] ml-[180px] items-center">
+            <img src="img/microscope.svg" alt="Microscope" />
+            <div class="w-[390px]">
+              <h3 class="text-[48px] leading-[62px]">
+                Find a trial that works best for you
+              </h3>
+              <p class="text-[20px] leading-[32px]">
+                Take our brief personalized online survey to match you with an
+                appropriate trial
+              </p>
+            </div>
+          </div>
+          <!-- Second -->
+          <div class="flex flex-row gap-[260px] ml-[180px] items-center">
+            <img src="img/survey_1.svg" alt="Microscope" />
+            <div class="w-[390px]">
+              <h3 class="text-[48px] leading-[62px]">
+                Schedule an in person visit
+              </h3>
+              <p class="text-[20px] leading-[32px]">
+                After completing the survey use our calendar to select a day and
+                time that works best for you to come visit our facility.
+              </p>
+            </div>
+          </div>
+          <!-- Third -->
+          <div class="flex flex-row gap-[260px] ml-[180px] items-center">
+            <img src="img/meet_3.svg" alt="Meeting" />
+            <div class="w-[390px]">
+              <h3 class="text-[48px] leading-[62px]">
+                Your first visit (30mins-1hr)
+              </h3>
+              <p class="text-[20px] leading-[32px]">
+                You will meet with our highly trained personnel to qualify and
+                walk you through what you can expect from participating in a
+                clinical trial.
+              </p>
+              <p class="text-[20px] leading-[32px]">
+                Your coordinator will ask questions about your health history,
+                concomitant medications, ongoing treatment, and your lifestyle
+                habits. We'll discuss the protocol in detail, such as
+                appointment schedules, procedures, and medications if required.
+                After you read and sign a copy of the informed consent, we will
+                be able to schedule you for a trial.
+              </p>
+            </div>
+          </div>
+          <!-- Forth -->
+          <div class="flex flex-row gap-[260px] ml-[180px] items-center">
+            <img src="img/trial_2.svg" alt="Trial" />
+            <div class="w-[390px]">
+              <h3 class="text-[48px] leading-[62px]">
+                Treatment begins (varies on the trial)
+              </h3>
+              <p class="text-[20px] leading-[32px]">
+                You will be thoroughly informed about the adverse effects and
+                interactions with drugs and herbal supplements. You will be
+                given all the necessary information about dosage and how to take
+                your medications.
+              </p>
+            </div>
+          </div>
+          <!-- Fifth -->
+          <div class="flex flex-row gap-[260px] ml-[180px] items-center">
+            <img src="img/files.svg" alt="Files" />
+            <div class="w-[390px]">
+              <h3 class="text-[48px] leading-[62px]">Final phase</h3>
+              <p class="text-[20px] leading-[32px]">
+                Once you sign the informed consent and the trial begins, each of
+                your visits will be documented. You will receive the
+                investigational product from us if needed. We will also schedule
+                all follow-up visits.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="mt-[200px] call_to_action">
+        <div class="xl:ml-[240px] flex xl:flex-row flex-col justify-evenly">
+          <div
+            class="pt-32 xl:pb-96 xl:mr-[190px] pb-[70px] xl:ml-0 lg:ml-[60px] xxl:w-[415px] xl:w-[415px] md:w-[550px] w-[20rem] md:mx-[12px] md:pl-10 px-6"
+          >
+            <p class="uppercase text-lighttext">Join clinical trial</p>
+            <h3 class="text-[36px] leading-[50px]">
+              Fill out the questionnaire and check what clinical trial you
+              qualify for
+            </h3>
+            <p class="text-[20px] leading-[32px]">
+              Get access to innovative treatment methods and help in the
+              development of the future medicine.
+            </p>
+          </div>
+          <div class="bg-white w-full md:m-1 md:pl-10">
+            <div
+              class="xl:pl-10 xl:pr-[350px] lg:pl-[130px] md:mx-[12px] px-6 pt-[70px]"
+            >
+              <p class="xl:pt-[50px]">1/6</p>
+              <h3
+                class="xl:pt-[32px] xl:text-[48px] lg:text-[48px] md:text-[48px] text-[36px] leading-[62px]"
+              >
+                Welcome!
+              </h3>
+              <p
+                class="xl:pt-[14px] md:text-[20px] text-base leading-[26px] md:w-[665px] w-[330px]"
+              >
+                Before we show you the benefits that you could be eligible for
+                we need to learn more about you.
+              </p>
+              <div class="xl:pt-[32px] w-full">
+                <h3 class="xl:text-[48px] leading-[62px] mb-8">
+                  Select your sex assigned at birth
+                </h3>
+
+                <div class="flex flex-col gap-4 xl:mb-10 mb-[90px]">
+                  <div
+                    class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                  >
+                    <input
+                      id="bordered-radio-1"
+                      type="radio"
+                      value=""
+                      name="bordered-radio"
+                      class="w-4 h-4 text-black bg-gray-100 border-black focus:ring-black focus:ring-2"
+                    />
+                    <label
+                      for="bordered-radio-1"
+                      class="py-4 ml-2 w-full text-sm font-medium text-gray-900"
+                      ><i class="icon-venus"></i>Female</label
+                    >
+                  </div>
+                  <div
+                    class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                  >
+                    <input
+                      checked=""
+                      id="bordered-radio-2"
+                      type="radio"
+                      value=""
+                      name="bordered-radio"
+                      class="w-4 h-4 text-black border-black focus:ring-black focus:ring-2"
+                    />
+                    <label
+                      for="bordered-radio-2"
+                      class="py-4 ml-2 w-full text-sm font-medium text-gray-900"
+                      ><i class="icon-mars"></i>Male</label
+                    >
+                  </div>
+                  <div
+                    class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                  >
+                    <input
+                      checked=""
+                      id="bordered-radio-3"
+                      type="radio"
+                      value=""
+                      name="bordered-radio"
+                      class="w-4 h-4 text-black bg-gray-100 border-black focus:ring-black focus:ring-2"
+                    />
+                    <label
+                      for="bordered-radio-3"
+                      class="py-4 ml-2 w-full text-sm font-medium text-gray-900"
+                      ><i class="icon-transgender-alt"></i>Intersex</label
+                    >
+                  </div>
+                </div>
+                <div class="mb-10">
+                  <a href="#" class="bg-black text-white px-8 py-4">Next</a>
+                  <a
+                    href="#"
+                    class="border-2 border-black bg-white text-black px-8 py-4"
+                    >I'd rather not say</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer">
+      <div class="container mt-10 md:mx-auto px-6 overflow-x-hidden">
+        <div
+          class="flex md:flex-row flex-col-reverse md:justify-between items-center xxl:w-[1920px] xl:w-[1440px] lg:w-[1000px] md:w-[834px] w-[330px]"
+        >
+          <div class="flex flex-col md:items-start items-center">
+            <a href="index.html" class="text-center">
+              <img src="img/reserka-logo.svg" alt="Reserka Logo" />
+            </a>
+            <p class="mt-5 md:text-start text-center">
+              Let's build a better future of medicine together!
+            </p>
+          </div>
+          <div class="flex">
+            <img src="img/circle.png" alt="gradient circle" />
+          </div>
+        </div>
+        <div
+          class="xxl:w-[120rem] xl:w-[90rem] lg:w-[62rem] md-[52rem] md:h-[43rem] w-[20rem]"
+        >
+          <div
+            class="flex md:flex-row flex-col gap-36 md:justify-between justify-between"
+          >
+            <div>
+              <p class="mb-6 text-lighttext uppercase">Sitemap</p>
+              <div class="flex flex-col md:flex-wrap md:h-[160px] md:w-[175px]">
+                <div class="flex flex-col">
+                  <a class="mb-6" href="#">Current Trials</a>
+                  <a class="mb-6" href="#">Process</a>
+                  <a class="mb-6" href="#">For Sponsors</a>
+                  <a class="mb-6" href="#">FAQ</a>
+                </div>
+                <div class="flex flex-col md:pl-16">
+                  <a class="mb-6" href="#">About Us</a>
+                  <a class="mb-6" href="#">Team</a>
+                  <a class="mb-6" href="#">Contact </a>
+                </div>
+              </div>
+            </div>
+            <div class="lg:mr-40 md:w-[650px]">
+              <p class="mb-6 text-lighttext upper">Location</p>
+              <h4 class="text-4xl mb-8">Reserka Miami Clinic Center</h4>
+
+              <p class="text-base text-lighttext mb-3">Adress</p>
+              <p class="mb-4">10860 SW 88th Street,#100,<br />Miami,FL,33176</p>
+
+              <p class="text-base text-lighttext mb-3">Phone</p>
+              <p class="mb-4"><a href="#">305-542-3652</a></p>
+
+              <p class="text-base text-lighttext mb-3">Email</p>
+              <p class="mb-4"><a href="#">contact@reserka.com</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/flowbite.js"></script>
+    <script src="js/tiny-slider.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/second_script.js"></script>
+  </body>
+</html>

@@ -35,21 +35,6 @@ accordionItemHeaders.forEach((accordionItemHeader) => {
   });
 });
 
-// SLICK
-// $(document).ready(function () {
-//   $(".carousel__inner").slick({
-//     dots: true,
-//     infinite: true,
-//     speed: 300,
-//     slidesToShow: 1,
-//     adaptiveHeight: true,
-//     prevArrow:
-//       '<button type="button" class="slick-prev"><i class="icon-left"></i></button',
-//     nextArrow:
-//       '<button type="button" class="slick-prev"><i class="icon-right"></i></button',
-//   });
-// });
-
 // TINY SLIDER
 
 const slider = tns({
@@ -92,6 +77,8 @@ document.querySelector(".prev").addEventListener("click", function () {
 document.querySelector(".next").addEventListener("click", function () {
   slider.goTo("next");
 });
+
+//
 
 // GOOGLE MAP
 let map;
