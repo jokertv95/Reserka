@@ -1431,6 +1431,14 @@ input:checked + .toggle-bg {
   margin-top: 7rem;
 }
 
+.mt-\[160px\] {
+  margin-top: 160px;
+}
+
+.ml-\[180px\] {
+  margin-left: 180px;
+}
+
 .mb-\[32px\] {
   margin-bottom: 32px;
 }
@@ -1475,24 +1483,12 @@ input:checked + .toggle-bg {
   margin-bottom: 13rem;
 }
 
-.mb-1 {
-  margin-bottom: 0.25rem;
-}
-
 .mt-\[44px\] {
   margin-top: 44px;
 }
 
-.ml-\[\] {
-  margin-left: ;
-}
-
-.ml-\[180px\] {
-  margin-left: 180px;
-}
-
-.mt-\[160px\] {
-  margin-top: 160px;
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .block {
@@ -1605,16 +1601,16 @@ input:checked + .toggle-bg {
   height: 136px;
 }
 
+.h-\[188px\] {
+  height: 188px;
+}
+
 .h-6 {
   height: 1.5rem;
 }
 
 .h-9 {
   height: 2.25rem;
-}
-
-.h-\[188px\] {
-  height: 188px;
 }
 
 .w-full {
@@ -1703,6 +1699,10 @@ input:checked + .toggle-bg {
   width: 250px;
 }
 
+.w-\[390px\] {
+  width: 390px;
+}
+
 .w-\[95px\] {
   width: 95px;
 }
@@ -1759,36 +1759,20 @@ input:checked + .toggle-bg {
   width: 142px;
 }
 
-.w-64 {
-  width: 16rem;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-\[\] {
-  width: ;
+.w-\[630px\] {
+  width: 630px;
 }
 
 .w-\[185\] {
   width: 185;
 }
 
-.w-\[530px\] {
-  width: 530px;
+.w-64 {
+  width: 16rem;
 }
 
-.w-\[700px\] {
-  width: 700px;
-}
-
-.w-\[630px\] {
-  width: 630px;
-}
-
-.w-\[390px\] {
-  width: 390px;
+.w-1\/2 {
+  width: 50%;
 }
 
 .flex-1 {
@@ -1875,6 +1859,10 @@ input:checked + .toggle-bg {
 
 .flex-row {
   flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
 }
 
 .flex-col {
@@ -1973,14 +1961,6 @@ input:checked + .toggle-bg {
   gap: 24px;
 }
 
-.gap-\[\] {
-  gap: ;
-}
-
-.gap-\[260px\] {
-  gap: 260px;
-}
-
 .gap-y-\[68px\] {
   row-gap: 68px;
 }
@@ -2034,10 +2014,6 @@ input:checked + .toggle-bg {
 
 .overflow-x-hidden {
   overflow-x: hidden;
-}
-
-.overflow-y-hidden {
-  overflow-y: hidden;
 }
 
 .rounded {
@@ -2568,10 +2544,6 @@ input:checked + .toggle-bg {
   line-height: 2.25rem;
 }
 
-.leading-\[\] {
-  line-height: ;
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -2814,6 +2786,8 @@ body {
   min-height: 500px;
   width: 100%;
 }
+
+/* SLIDER Button */
 
 .hover\:border-gray-300:hover {
   --tw-border-opacity: 1;
@@ -3194,14 +3168,6 @@ body {
     left: 380px;
   }
 
-  .md\:left-\[890px\] {
-    left: 890px;
-  }
-
-  .md\:left-\[590px\] {
-    left: 590px;
-  }
-
   .md\:m-1 {
     margin: 0.25rem;
   }
@@ -3303,10 +3269,6 @@ body {
     margin-left: 1.5rem;
   }
 
-  .md\:ml-\[30px\] {
-    margin-left: 30px;
-  }
-
   .md\:inline-block {
     display: inline-block;
   }
@@ -3387,16 +3349,12 @@ body {
     height: 135px;
   }
 
-  .md\:h-\[350px\] {
-    height: 350px;
-  }
-
-  .md\:h-\[390px\] {
-    height: 390px;
-  }
-
   .md\:h-\[400px\] {
     height: 400px;
+  }
+
+  .md\:h-\[350px\] {
+    height: 350px;
   }
 
   .md\:w-\[650px\] {
@@ -3593,10 +3551,6 @@ body {
 
   .md\:w-\[270px\] {
     width: 270px;
-  }
-
-  .md\:w-\[930px\] {
-    width: 930px;
   }
 
   .md\:grid-cols-2 {
@@ -3888,22 +3842,6 @@ body {
     top: 90px;
   }
 
-  .lg\:left-\[1050px\] {
-    left: 1050px;
-  }
-
-  .lg\:left-\[950px\] {
-    left: 950px;
-  }
-
-  .lg\:left-\[700px\] {
-    left: 700px;
-  }
-
-  .lg\:left-\[750px\] {
-    left: 750px;
-  }
-
   .lg\:left-\[790px\] {
     left: 790px;
   }
@@ -3941,6 +3879,10 @@ body {
     margin-top: 0px;
   }
 
+  .lg\:ml-\[250px\] {
+    margin-left: 250px;
+  }
+
   .lg\:ml-\[100px\] {
     margin-left: 100px;
   }
@@ -3959,10 +3901,6 @@ body {
 
   .lg\:mt-\[32px\] {
     margin-top: 32px;
-  }
-
-  .lg\:ml-\[\] {
-    margin-left: ;
   }
 
   .lg\:block {
@@ -4027,10 +3965,6 @@ body {
 
   .lg\:h-\[175px\] {
     height: 175px;
-  }
-
-  .lg\:h-\[136px\] {
-    height: 136px;
   }
 
   .lg\:w-auto {
@@ -4207,22 +4141,6 @@ body {
 
   .lg\:w-\[250px\] {
     width: 250px;
-  }
-
-  .lg\:w-\[\] {
-    width: ;
-  }
-
-  .lg\:w-\[132px\] {
-    width: 132px;
-  }
-
-  .lg\:w-\[930px\] {
-    width: 930px;
-  }
-
-  .lg\:w-\[900px\] {
-    width: 900px;
   }
 
   .lg\:flex-row {
@@ -4503,12 +4421,12 @@ body {
     width: 1220px;
   }
 
-  .xl\:w-\[132px\] {
-    width: 132px;
-  }
-
   .xl\:w-\[900px\] {
     width: 900px;
+  }
+
+  .xl\:w-\[132px\] {
+    width: 132px;
   }
 
   .xl\:flex-row {

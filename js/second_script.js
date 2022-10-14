@@ -1,9 +1,12 @@
 const processSlider = tns({
   container: ".slider_process",
-  slideBy: "1",
-  autoplay: false,
+  slideBy: "page",
+  autoplay: true,
   controls: false,
   touch: true,
+  mouseDrag: true,
+  center: true,
+  speed: 1,
   responsive: {
     375: {
       items: 1,

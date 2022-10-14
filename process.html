@@ -176,82 +176,109 @@
 
       <!-- Process Slider -->
       <section>
-        <div class="container mt-[160px] slider_process">
-          <!-- First -->
-          <div class="flex flex-row gap-[260px] ml-[180px] items-center">
-            <img src="img/microscope.svg" alt="Microscope" />
-            <div class="w-[390px]">
-              <h3 class="text-[48px] leading-[62px]">
-                Find a trial that works best for you
-              </h3>
-              <p class="text-[20px] leading-[32px]">
-                Take our brief personalized online survey to match you with an
-                appropriate trial
-              </p>
-            </div>
+        <div class="container relative flex flex-col mt-[160px]">
+          <div
+            class="md:inline-block md:relative absolute md:top-0 md:left-0 top-[1050px] left-[100px]"
+          >
+            <button class="carousel__slider__button prev mr-[50px]">
+              <img src="img/left-arrow.svg" alt="" />
+            </button>
+            <button class="carousel__slider__button next">
+              <img src="img/right-arrow.svg" alt="" />
+            </button>
           </div>
-          <!-- Second -->
-          <div class="flex flex-row gap-[260px] ml-[180px] items-center">
-            <img src="img/survey_1.svg" alt="Microscope" />
-            <div class="w-[390px]">
-              <h3 class="text-[48px] leading-[62px]">
-                Schedule an in person visit
-              </h3>
-              <p class="text-[20px] leading-[32px]">
-                After completing the survey use our calendar to select a day and
-                time that works best for you to come visit our facility.
-              </p>
+          <div class="flex flex-row slider_process">
+            <!-- First -->
+            <div>
+              <div
+                class="flex md:flex-row flex-row-reverse ml-[180px] items-center w-full"
+              >
+                <img src="img/microscope.svg" alt="Microscope" />
+                <div class="w-[390px] lg:ml-[250px]">
+                  <h3 class="text-[48px] leading-[62px]">
+                    Find a trial that works best for you
+                  </h3>
+                  <p class="text-[20px] leading-[32px]">
+                    Take our brief personalized online survey to match you with
+                    an appropriate trial
+                  </p>
+                </div>
+              </div>
             </div>
+            <!-- Second -->
+            <div>
+              <div class="flex flex-row ml-[180px] items-center w-full">
+                <img src="img/survey_1.svg" alt="Microscope" />
+                <div class="w-[390px] lg:ml-[250px]">
+                  <h3 class="text-[48px] leading-[62px]">
+                    Schedule an in person visit
+                  </h3>
+                  <p class="text-[20px] leading-[32px]">
+                    After completing the survey use our calendar to select a day
+                    and time that works best for you to come visit our facility.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Third -->
+            <!-- <div>
+              <div class="flex flex-row ml-[180px] items-center w-full">
+                <img src="img/meet_3.svg" alt="Meeting" />
+                <div class="w-[390px] lg:ml-[250px]">
+                  <h3 class="text-[48px] leading-[62px]">
+                    Your first visit (30mins-1hr)
+                  </h3>
+                  <p class="text-[20px] leading-[32px]">
+                    You will meet with our highly trained personnel to qualify
+                    and walk you through what you can expect from participating
+                    in a clinical trial.
+                  </p>
+                  <p class="text-[20px] leading-[32px]">
+                    Your coordinator will ask questions about your health
+                    history, concomitant medications, ongoing treatment, and
+                    your lifestyle habits. We'll discuss the protocol in detail,
+                    such as appointment schedules, procedures, and medications
+                    if required. After you read and sign a copy of the informed
+                    consent, we will be able to schedule you for a trial.
+                  </p>
+                </div>
+              </div>
+            </div> -->
+            <!-- Forth -->
+            <!-- <div>
+              <div class="flex flex-row ml-[180px] items-center w-full">
+                <img src="img/trial_2.svg" alt="Trial" />
+                <div class="w-[390px] lg:ml-[250px]">
+                  <h3 class="text-[48px] leading-[62px]">
+                    Treatment begins (varies on the trial)
+                  </h3>
+                  <p class="text-[20px] leading-[32px]">
+                    You will be thoroughly informed about the adverse effects
+                    and interactions with drugs and herbal supplements. You will
+                    be given all the necessary information about dosage and how
+                    to take your medications.
+                  </p>
+                </div>
+              </div>
+            </div> -->
+            <!-- Fifth -->
+            <!-- <div>
+              <div class="flex flex-row ml-[180px] items-center w-full">
+                <img src="img/files.svg" alt="Files" />
+                <div class="w-[390px] lg:ml-[250px]">
+                  <h3 class="text-[48px] leading-[62px]">Final phase</h3>
+                  <p class="text-[20px] leading-[32px]">
+                    Once you sign the informed consent and the trial begins,
+                    each of your visits will be documented. You will receive the
+                    investigational product from us if needed. We will also
+                    schedule all follow-up visits.
+                  </p>
+                </div>
+              </div>
+            </div> -->
           </div>
-          <!-- Third -->
-          <div class="flex flex-row gap-[260px] ml-[180px] items-center">
-            <img src="img/meet_3.svg" alt="Meeting" />
-            <div class="w-[390px]">
-              <h3 class="text-[48px] leading-[62px]">
-                Your first visit (30mins-1hr)
-              </h3>
-              <p class="text-[20px] leading-[32px]">
-                You will meet with our highly trained personnel to qualify and
-                walk you through what you can expect from participating in a
-                clinical trial.
-              </p>
-              <p class="text-[20px] leading-[32px]">
-                Your coordinator will ask questions about your health history,
-                concomitant medications, ongoing treatment, and your lifestyle
-                habits. We'll discuss the protocol in detail, such as
-                appointment schedules, procedures, and medications if required.
-                After you read and sign a copy of the informed consent, we will
-                be able to schedule you for a trial.
-              </p>
-            </div>
-          </div>
-          <!-- Forth -->
-          <div class="flex flex-row gap-[260px] ml-[180px] items-center">
-            <img src="img/trial_2.svg" alt="Trial" />
-            <div class="w-[390px]">
-              <h3 class="text-[48px] leading-[62px]">
-                Treatment begins (varies on the trial)
-              </h3>
-              <p class="text-[20px] leading-[32px]">
-                You will be thoroughly informed about the adverse effects and
-                interactions with drugs and herbal supplements. You will be
-                given all the necessary information about dosage and how to take
-                your medications.
-              </p>
-            </div>
-          </div>
-          <!-- Fifth -->
-          <div class="flex flex-row gap-[260px] ml-[180px] items-center">
-            <img src="img/files.svg" alt="Files" />
-            <div class="w-[390px]">
-              <h3 class="text-[48px] leading-[62px]">Final phase</h3>
-              <p class="text-[20px] leading-[32px]">
-                Once you sign the informed consent and the trial begins, each of
-                your visits will be documented. You will receive the
-                investigational product from us if needed. We will also schedule
-                all follow-up visits.
-              </p>
-            </div>
+          <div class="sliderButton">
+            <button><img src="img/add-circle-outline.svg" alt="" /></button>
           </div>
         </div>
       </section>
