@@ -2652,6 +2652,18 @@ input:checked + .toggle-bg {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+@font-face {
+  font-family: "Signifier-Regular";
+
+  src: url(/src/font/TestSignifier-Regular.otf);
+}
+
+@font-face {
+  font-family: "Untitled-Sans";
+
+  src: url(/src/font/Untitled_Sans_Regular.woff2.ttf);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -2659,6 +2671,16 @@ input:checked + .toggle-bg {
 body {
   max-width: 1920px;
   overflow-x: hidden;
+  font-family: "Untitled-Sans";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Signifier-Regular";
 }
 
 /* HAMBURGER MENU */
