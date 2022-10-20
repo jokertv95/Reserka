@@ -178,19 +178,9 @@
       <!-- Process Slider -->
       <section>
         <div class="container relative flex flex-col mt-[160px]">
-          <div
-            class="md:inline-block md:relative absolute md:top-0 md:left-0 top-[1050px] left-[100px]"
-          >
-            <button class="carousel__slider__button prev mr-[50px]">
-              <img src="img/left-arrow.svg" alt="" />
-            </button>
-            <button class="carousel__slider__button next">
-              <img src="img/right-arrow.svg" alt="" />
-            </button>
-          </div>
-          <div class="flex flex-row slider_process">
+          <div class="flex flex-row slider">
             <!-- First -->
-            <div>
+            <div class="slider__item">
               <div
                 class="flex md:flex-row flex-row-reverse ml-[180px] items-center w-full"
               >
@@ -207,7 +197,7 @@
               </div>
             </div>
             <!-- Second -->
-            <div>
+            <div class="slider__item">
               <div class="flex flex-row ml-[180px] items-center w-full">
                 <img src="img/survey_1.svg" alt="Microscope" />
                 <div class="w-[390px] lg:ml-[250px]">
@@ -222,7 +212,7 @@
               </div>
             </div>
             <!-- Third -->
-            <!-- <div>
+            <div class="slider__item">
               <div class="flex flex-row ml-[180px] items-center w-full">
                 <img src="img/meet_3.svg" alt="Meeting" />
                 <div class="w-[390px] lg:ml-[250px]">
@@ -244,9 +234,9 @@
                   </p>
                 </div>
               </div>
-            </div> -->
+            </div>
             <!-- Forth -->
-            <!-- <div>
+            <div class="slider__item">
               <div class="flex flex-row ml-[180px] items-center w-full">
                 <img src="img/trial_2.svg" alt="Trial" />
                 <div class="w-[390px] lg:ml-[250px]">
@@ -261,9 +251,9 @@
                   </p>
                 </div>
               </div>
-            </div> -->
+            </div>
             <!-- Fifth -->
-            <!-- <div>
+            <div class="slider__item">
               <div class="flex flex-row ml-[180px] items-center w-full">
                 <img src="img/files.svg" alt="Files" />
                 <div class="w-[390px] lg:ml-[250px]">
@@ -276,10 +266,17 @@
                   </p>
                 </div>
               </div>
-            </div> -->
+            </div>
           </div>
-          <div class="sliderButton">
-            <button><img src="img/add-circle-outline.svg" alt="" /></button>
+
+          <div class="absolute lg:left-[1500px]">
+            <ul class="flex md:flex-col flex-row slider__nav text-center">
+              <li>01</li>
+              <li>02</li>
+              <li>03</li>
+              <li>04</li>
+              <li>05</li>
+            </ul>
           </div>
         </div>
       </section>
