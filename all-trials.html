@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/fontello.css" />
+    <link rel="stylesheet" href="css/air-datepicker.css" />
     <link rel="stylesheet" href="css/main.css" />
     <title>All trails</title>
   </head>
@@ -471,7 +473,7 @@
                   <label
                     for="bordered-radio-1"
                     class="py-4 ml-2 w-full text-sm font-medium text-gray-900"
-                    ><i class="icon-venus"></i>Female</label
+                    ><i class="icon-female"></i>Female</label
                   >
                 </div>
                 <div
@@ -488,7 +490,7 @@
                   <label
                     for="bordered-radio-2"
                     class="py-4 ml-2 w-full text-sm font-medium text-gray-900"
-                    ><i class="icon-mars"></i>Male</label
+                    ><i class="icon-male"></i>Male</label
                   >
                 </div>
                 <div
@@ -510,12 +512,258 @@
                 </div>
               </div>
               <div class="mb-10">
-                <a href="#" class="bg-black text-white px-8 py-4">Next</a>
-                <a
-                  href="#"
-                  class="border-2 border-black bg-white text-black px-8 py-4"
-                  >I'd rather not say</a
+                <button
+                  type="button"
+                  data-modal-toggle="authentication-modal"
+                  class="bg-black text-white px-8 py-4"
                 >
+                  Next
+                </button>
+
+                <button
+                  type="button"
+                  data-modal-toggle="authentication-modal"
+                  class="border-2 border-black bg-white text-black px-8 py-4"
+                >
+                  I'd rather not say
+                </button>
+                <!-- Modal -->
+                <div
+                  id="authentication-modal"
+                  tabindex="-1"
+                  class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full"
+                >
+                  <div class="relative p-4 w-full max-w-7xl h-full md:h-auto">
+                    <!-- Modal content -->
+                    <div
+                      class="relative bg-white rounded-lg shadow dark:bg-gray-700"
+                    >
+                      <form id="regForm" action="">
+                        <!-- One "tab" for each step in the form: -->
+                        <div class="tab">
+                          <h3 class="text-[48px] leading-[62px]">
+                            Date of birth
+                          </h3>
+                          <p class="text-[20px] leading-[32px]">
+                            That helps us find the clincal studies for your age
+                            group.
+                          </p>
+                          <div class="relative">
+                            <div
+                              class="flex absolute inset-y-0 left-[300px] items-center pl-3 pointer-events-none"
+                            >
+                              <svg
+                                aria-hidden="true"
+                                class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                                fill="currentColor"
+                                viewBox="0 0 20 20"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  fill-rule="evenodd"
+                                  d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z"
+                                  clip-rule="evenodd"
+                                ></path>
+                              </svg>
+                            </div>
+                            <input
+                              type="text"
+                              placeholder="MM/DD/YYYY"
+                              id="airdatepicker"
+                              class="form-controll w-[350px] rounded-md"
+                            />
+                          </div>
+                        </div>
+
+                        <div class="tab">
+                          <h3 class="text-[48px] leading-[62px]">
+                            Past Medical History
+                          </h3>
+                          <p class="text-[20px] leading-[32px]">
+                            Please list your previous diagnosis, so we can find
+                            the relevant studies for you.
+                          </p>
+
+                          <textarea
+                            id="medical_history"
+                            rows="4"
+                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="ex. allergies, illnesses, surgeries, immunizations"
+                          ></textarea>
+                        </div>
+
+                        <div class="tab">
+                          <h3 class="text-[48px] leading-[62px]">
+                            Smoking habits
+                          </h3>
+                          <p class="text-[20px] leading-[32px]">
+                            Your smoking habits may have an impact on types of
+                            trials you can take part in.
+                          </p>
+                          <div class="flex flex-col gap-4 xl:mb-10 mb-[90px]">
+                            <div
+                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                            >
+                              <input
+                                id="no_smoking"
+                                type="radio"
+                                value="0"
+                                name="bordered-radio"
+                                class="w-4 h-4 text-black bg-gray-100 border-black focus:ring-black focus:ring-2"
+                              />
+                              <label
+                                for="no_smoking"
+                                class="py-4 ml-2 w-full text-sm font-medium text-gray-900"
+                                >I’ve never smoked cigarettes</label
+                              >
+                            </div>
+                            <div
+                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                            >
+                              <input
+                                checked=""
+                                id="stop_smoking"
+                                type="radio"
+                                value="1"
+                                name="bordered-radio"
+                                class="w-4 h-4 text-black border-black focus:ring-black focus:ring-2"
+                              />
+                              <label
+                                for="stop_smoking"
+                                class="py-4 ml-2 w-full text-sm font-medium text-gray-900"
+                                >I’ve quit smoking some time ago</label
+                              >
+                            </div>
+                            <div
+                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                            >
+                              <input
+                                checked=""
+                                id="still_smoking"
+                                type="radio"
+                                value="2"
+                                name="bordered-radio"
+                                class="w-4 h-4 text-black bg-gray-100 border-black focus:ring-black focus:ring-2"
+                              />
+                              <label
+                                for="still_smoking"
+                                class="py-4 ml-2 w-full text-sm font-medium text-gray-900"
+                                >I’m a chain smoker</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="tab">
+                          <h3 class="text-[48px] leading-[62px]">
+                            Study length
+                          </h3>
+                          <p class="text-[20px] leading-[32px]">
+                            How long are you willing to participate in the
+                            study?
+                          </p>
+                          <div class="flex flex-col gap-4 xl:mb-10 mb-[90px]">
+                            <div
+                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                            >
+                              <input
+                                id="one_month"
+                                type="radio"
+                                value="0"
+                                name="bordered-radio"
+                                class="w-4 h-4 text-black bg-gray-100 border-black focus:ring-black focus:ring-2"
+                              />
+                              <label
+                                for="one_month"
+                                class="py-4 ml-2 w-full text-sm font-medium text-gray-900"
+                                ><i class="icon-venus"></i>up to 1 month
+                              </label>
+                            </div>
+                            <div
+                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                            >
+                              <input
+                                checked=""
+                                id="six_month"
+                                type="radio"
+                                value="1"
+                                name="bordered-radio"
+                                class="w-4 h-4 text-black border-black focus:ring-black focus:ring-2"
+                              />
+                              <label
+                                for="six_month"
+                                class="py-4 ml-2 w-full text-sm font-medium text-gray-900"
+                                >1 month - 6 months</label
+                              >
+                            </div>
+                            <div
+                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                            >
+                              <input
+                                checked=""
+                                id="more_month"
+                                type="radio"
+                                value="2"
+                                name="bordered-radio"
+                                class="w-4 h-4 text-black bg-gray-100 border-black focus:ring-black focus:ring-2"
+                              />
+                              <label
+                                for="more_month"
+                                class="py-4 ml-2 w-full text-sm font-medium text-gray-900"
+                                >more than 6 months</label
+                              >
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="tab">
+                          <h3 class="text-[48px] leading-[62px]">
+                            Great! Now you can get in touch with study
+                            coordinator.
+                          </h3>
+                          <p class="text-[20px] leading-[32px]">
+                            These are our top-picks, tailored to the information
+                            you provided in the form.
+                          </p>
+                          <p class="text-[20px] leading-[32px]">
+                            If you need more help feel free to contact with our
+                            coordinator about other options
+                          </p>
+                          <button>Contact form</button>
+                        </div>
+
+                        <div class="overflow-auto mt-[20px]">
+                          <div float-left>
+                            <button
+                              class="text-black px-8 py-4"
+                              type="button"
+                              id="prevBtn"
+                              onclick="nextPrev(-1)"
+                            >
+                              Previous
+                            </button>
+                            <button
+                              class="bg-black text-white px-8 py-4"
+                              type="button"
+                              id="nextBtn"
+                              onclick="nextPrev(1)"
+                            >
+                              Next
+                            </button>
+                          </div>
+                        </div>
+
+                        <!-- Circles which indicates the steps of the form: -->
+                        <div style="text-align: center; margin-top: 40px">
+                          <span class="step"></span>
+                          <span class="step"></span>
+                          <span class="step"></span>
+                          <span class="step"></span>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -602,7 +850,7 @@
 
     <!-- Footer -->
     <footer id="footer">
-      <div class="container mt-[200px] md:mx-auto px-6 overflow-x-hidden">
+      <div class="container mt-10 md:mx-auto px-6 overflow-x-hidden">
         <div
           class="flex md:flex-row flex-col-reverse md:justify-between items-center xxl:w-[1920px] xl:w-[1440px] lg:w-[1000px] md:w-[834px] w-[330px]"
         >
@@ -628,15 +876,15 @@
               <p class="mb-6 text-lighttext uppercase">Sitemap</p>
               <div class="flex flex-col md:flex-wrap md:h-[160px] md:w-[175px]">
                 <div class="flex flex-col">
-                  <a class="mb-6" href="#">Current Trials</a>
-                  <a class="mb-6" href="#">Process</a>
-                  <a class="mb-6" href="#">For Sponsors</a>
-                  <a class="mb-6" href="#">FAQ</a>
+                  <a class="mb-6" href="all-trials.html">Current Trials</a>
+                  <a class="mb-6" href="process.html">Process</a>
+                  <a class="mb-6" href="sponsors.html">For Sponsors</a>
+                  <a class="mb-6" href="faq.html">FAQ</a>
                 </div>
                 <div class="flex flex-col md:pl-16">
-                  <a class="mb-6" href="#">About Us</a>
-                  <a class="mb-6" href="#">Team</a>
-                  <a class="mb-6" href="#">Contact </a>
+                  <a class="mb-6" href="about-us.html">About Us</a>
+                  <a class="mb-6" href="team.html">Team</a>
+                  <a class="mb-6" href="contact-us.html">Contact </a>
                 </div>
               </div>
             </div>
@@ -648,10 +896,12 @@
               <p class="mb-4">10860 SW 88th Street,#100,<br />Miami,FL,33176</p>
 
               <p class="text-base text-lighttext mb-3">Phone</p>
-              <p class="mb-4"><a href="#">305-542-3652</a></p>
+              <p class="mb-4"><a href="tel:+13055423642">305-542-3652</a></p>
 
               <p class="text-base text-lighttext mb-3">Email</p>
-              <p class="mb-4"><a href="#">contact@reserka.com</a></p>
+              <p class="mb-4">
+                <a href="mailto:contact@reserka.com">contact@reserka.com</a>
+              </p>
             </div>
           </div>
         </div>
@@ -659,6 +909,7 @@
     </footer>
 
     <script src="js/flowbite.js"></script>
+    <script src="js/air-datepicker.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
