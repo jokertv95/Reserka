@@ -89,6 +89,24 @@
       "css": "phone-outline",
       "code": 59400,
       "src": "typicons"
+    },
+    {
+      "uid": "10b2be8b48bebc1974d6f94bac9de71d",
+      "css": "female",
+      "code": 59401,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "23c2239369a69f752e790de95123b9e9",
+      "css": "male",
+      "code": 59402,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "5a77a57792f5bfd20fb80827af089d17",
+      "css": "transgender-alt",
+      "code": 61989,
+      "src": "fontawesome"
     }
   ]
 }
