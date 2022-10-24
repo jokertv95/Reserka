@@ -1003,7 +1003,7 @@
                   <button
                     type="button"
                     data-modal-toggle="authentication-modal"
-                    class="border-2 border-black bg-white text-black px-8 py-4"
+                    class="border border-black bg-white text-black px-8 py-4"
                   >
                     I'd rather not say
                   </button>
@@ -1016,21 +1016,43 @@
                     <div class="relative p-4 w-full max-w-7xl h-full md:h-auto">
                       <!-- Modal content -->
                       <div
-                        class="relative bg-white rounded-lg shadow dark:bg-gray-700"
+                        class="relative xl:h-[900px] bg-white rounded-lg shadow dark:bg-gray-700"
                       >
-                        <form id="regForm" action="">
+                        <!-- Modal header -->
+                        <div class="items-center p-5 rounded-t border-b">
+                          <button
+                            type="button"
+                            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-block items-center"
+                            data-modal-toggle="authentication-modal"
+                          >
+                            <i class="icon-left-small"></i>
+                            <span>Back to website</span>
+                          </button>
+                        </div>
+
+                        <form
+                          id="regForm"
+                          action=""
+                          class="p-[40px] mx-auto mt-[50px] mb-[100px]"
+                        >
                           <!-- One "tab" for each step in the form: -->
                           <div class="tab">
-                            <h3 class="text-[48px] leading-[62px]">
-                              Date of birth
-                            </h3>
+                            <div class="relative">
+                              <span
+                                class="md:absolute text-[24px] xl:left-[-50px] xl:top-[15px]"
+                                >2<span class="text-gray-400">/6</span></span
+                              >
+                              <h3 class="text-[48px] leading-[62px]">
+                                Date of birth
+                              </h3>
+                            </div>
                             <p class="text-[20px] leading-[32px]">
                               That helps us find the clincal studies for your
                               age group.
                             </p>
                             <div class="relative">
                               <div
-                                class="flex absolute inset-y-0 left-[300px] items-center pl-3 pointer-events-none"
+                                class="flex absolute inset-y-0 md:left-[300px] left-[180px] top-[30px] items-center pl-3 pointer-events-none"
                               >
                                 <svg
                                   aria-hidden="true"
@@ -1050,15 +1072,21 @@
                                 type="text"
                                 placeholder="MM/DD/YYYY"
                                 id="airdatepicker"
-                                class="form-controll w-[350px] rounded-md"
+                                class="form-controll md:w-[350px] w-[230px] mt-[32px] rounded-md"
                               />
                             </div>
                           </div>
 
                           <div class="tab">
-                            <h3 class="text-[48px] leading-[62px]">
-                              Past Medical History
-                            </h3>
+                            <div class="relative">
+                              <span
+                                class="md:absolute text-[24px] xl:left-[-50px] xl:top-[15px]"
+                                >3<span class="text-gray-400">/6</span></span
+                              >
+                              <h3 class="text-[48px] leading-[62px]">
+                                Past Medical History
+                              </h3>
+                            </div>
                             <p class="text-[20px] leading-[32px]">
                               Please list your previous diagnosis, so we can
                               find the relevant studies for you.
@@ -1067,22 +1095,28 @@
                             <textarea
                               id="medical_history"
                               rows="4"
-                              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
                               placeholder="ex. allergies, illnesses, surgeries, immunizations"
                             ></textarea>
                           </div>
 
                           <div class="tab">
-                            <h3 class="text-[48px] leading-[62px]">
-                              Smoking habits
-                            </h3>
+                            <div class="relative">
+                              <span
+                                class="md:absolute text-[24px] xl:left-[-50px] xl:top-[15px]"
+                                >4<span class="text-gray-400">/6</span></span
+                              >
+                              <h3 class="text-[48px] leading-[62px]">
+                                Smoking habits
+                              </h3>
+                            </div>
                             <p class="text-[20px] leading-[32px]">
                               Your smoking habits may have an impact on types of
                               trials you can take part in.
                             </p>
                             <div class="flex flex-col gap-4 xl:mb-10 mb-[90px]">
                               <div
-                                class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                                class="flex items-center pl-4 rounded border border-black xl:w-[28rem] md:w-[350px] w-[270px]"
                               >
                                 <input
                                   id="no_smoking"
@@ -1098,7 +1132,7 @@
                                 >
                               </div>
                               <div
-                                class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                                class="flex items-center pl-4 rounded border border-black xl:w-[28rem] md:w-[350px] w-[270px]"
                               >
                                 <input
                                   checked=""
@@ -1115,7 +1149,7 @@
                                 >
                               </div>
                               <div
-                                class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                                class="flex items-center pl-4 rounded border border-black xl:w-[28rem] md:w-[350px] w-[270px]"
                               >
                                 <input
                                   checked=""
@@ -1135,16 +1169,22 @@
                           </div>
 
                           <div class="tab">
-                            <h3 class="text-[48px] leading-[62px]">
-                              Study length
-                            </h3>
+                            <div class="relative">
+                              <span
+                                class="md:absolute text-[24px] xl:left-[-50px] xl:top-[15px]"
+                                >4<span class="text-gray-400">/6</span></span
+                              >
+                              <h3 class="text-[48px] leading-[62px]">
+                                Study length
+                              </h3>
+                            </div>
                             <p class="text-[20px] leading-[32px]">
                               How long are you willing to participate in the
                               study?
                             </p>
                             <div class="flex flex-col gap-4 xl:mb-10 mb-[90px]">
                               <div
-                                class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                                class="flex items-center pl-4 rounded border border-black xl:w-[28rem] md:w-[350px] w-[270px]"
                               >
                                 <input
                                   id="one_month"
@@ -1156,11 +1196,11 @@
                                 <label
                                   for="one_month"
                                   class="py-4 ml-2 w-full text-sm font-medium text-gray-900"
-                                  ><i class="icon-venus"></i>up to 1 month
+                                  >up to 1 month
                                 </label>
                               </div>
                               <div
-                                class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                                class="flex items-center pl-4 rounded border border-black xl:w-[28rem] md:w-[350px] w-[270px]"
                               >
                                 <input
                                   checked=""
@@ -1177,7 +1217,7 @@
                                 >
                               </div>
                               <div
-                                class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                                class="flex items-center pl-4 rounded border border-black xl:w-[28rem] md:w-[350px] w-[270px]"
                               >
                                 <input
                                   checked=""
@@ -1197,10 +1237,16 @@
                           </div>
 
                           <div class="tab">
-                            <h3 class="text-[48px] leading-[62px]">
-                              Great! Now you can get in touch with study
-                              coordinator.
-                            </h3>
+                            <div class="relative">
+                              <span
+                                class="md:absolute text-[24px] xl:left-[-50px] xl:top-[15px]"
+                                >6<span class="text-gray-400">/6</span></span
+                              >
+                              <h3 class="text-[48px] leading-[62px]">
+                                Great! Now you can get in touch with study
+                                coordinator.
+                              </h3>
+                            </div>
                             <p class="text-[20px] leading-[32px]">
                               These are our top-picks, tailored to the
                               information you provided in the form.
@@ -1217,10 +1263,12 @@
                             </button>
                           </div>
 
-                          <div class="overflow-auto mt-[20px]">
+                          <div
+                            class="overflow-auto lg:mt-[280px] md:mt-[50px] mt-[48px]"
+                          >
                             <div float-left>
                               <button
-                                class="text-black px-8 py-4"
+                                class="text-black hidden border border-black px-4 py-4"
                                 type="button"
                                 id="prevBtn"
                                 onclick="nextPrev(-1)"
@@ -1228,7 +1276,7 @@
                                 Previous
                               </button>
                               <button
-                                class="bg-black text-white px-8 py-4"
+                                class="bg-black border-[1px] border-black text-white px-8 py-4"
                                 type="button"
                                 id="nextBtn"
                                 onclick="nextPrev(1)"
@@ -1240,6 +1288,7 @@
 
                           <!-- Circles which indicates the steps of the form: -->
                           <div style="text-align: center; margin-top: 40px">
+                            <span class="step"></span>
                             <span class="step"></span>
                             <span class="step"></span>
                             <span class="step"></span>
