@@ -1718,6 +1718,10 @@ input:checked + .toggle-bg {
   width: 230px;
 }
 
+.w-\[270px\] {
+  width: 270px;
+}
+
 .w-\[300px\] {
   width: 300px;
 }
@@ -1808,10 +1812,6 @@ input:checked + .toggle-bg {
 
 .w-1\/2 {
   width: 50%;
-}
-
-.w-\[270px\] {
-  width: 270px;
 }
 
 .max-w-7xl {
@@ -2747,12 +2747,12 @@ input:checked + .toggle-bg {
 
 * {
   box-sizing: border-box;
-  font-family: "Untitled-Sans";
 }
 
 body {
   max-width: 1920px;
   overflow-x: hidden;
+  font-family: "Untitled-Sans";
 }
 
 h1,
