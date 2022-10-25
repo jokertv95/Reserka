@@ -2739,10 +2739,15 @@ input:checked + .toggle-bg {
   src: url(/src/font/Signifier-Regular.eot);
 
   src: url(/src/font/Signifier-Regular.eot?#iefix) format("embedded-opentype"),
+    url(/src/font/Signifier-Regular.otf) format("otf"),
     url(/src/font/Signifier-Regular.svg#Signifier-Regular) format("svg"),
     url(/src/font/Signifier-Regular.ttf) format("truetype"),
     url(/src/font/Signifier-Regular.woff) format("woff"),
     url(/src/font/Signifier-Regular.woff2) format("woff2");
+
+  font-weight: normal;
+
+  font-style: normal;
 }
 
 @font-face {
@@ -2752,10 +2757,15 @@ input:checked + .toggle-bg {
 
   src: url(/src/font/UntitledSans-Regular.eot?#iefix)
       format("embedded-opentype"),
+    url(/src/font/UntitledSans-Regular.otf) format("otf"),
     url(/src/font/UntitledSans-Regular.svg#UntitledSans-Regular) format("svg"),
     url(/src/font/UntitledSans-Regular.ttf) format("truetype"),
     url(/src/font/UntitledSans-Regular.woff) format("woff"),
     url(/src/font/UntitledSans-Regular.woff2) format("woff2");
+
+  font-weight: normal;
+
+  font-style: normal;
 }
 
 * {
