@@ -2736,14 +2736,7 @@ input:checked + .toggle-bg {
 @font-face {
   font-family: "Signifier-Regular";
 
-  src: url(/font/Signifier-Regular.eot);
-
-  src: url(/font/Signifier-Regular.eot?#iefix) format("embedded-opentype"),
-    url(/font/Signifier-Regular.otf) format("otf"),
-    url(/font/Signifier-Regular.svg#Signifier-Regular) format("svg"),
-    url(/font/Signifier-Regular.ttf) format("truetype"),
-    url(/font/Signifier-Regular.woff) format("woff"),
-    url(/font/Signifier-Regular.woff2) format("woff2");
+  src: url(/src/font/test-signifier-regular.woff2);
 
   font-weight: normal;
 
@@ -2753,14 +2746,7 @@ input:checked + .toggle-bg {
 @font-face {
   font-family: "UntitledSans-Regular";
 
-  src: url(/font/UntitledSans-Regular.eot);
-
-  src: url(/font/UntitledSans-Regular.eot?#iefix) format("embedded-opentype"),
-    url(/font/UntitledSans-Regular.otf) format("otf"),
-    url(/font/UntitledSans-Regular.svg#UntitledSans-Regular) format("svg"),
-    url(/font/UntitledSans-Regular.ttf) format("truetype"),
-    url(/font/UntitledSans-Regular.woff) format("woff"),
-    url(/font/UntitledSans-Regular.woff2) format("woff2");
+  src: url(/src/font/test-untitled-sans-regular.woff2);
 
   font-weight: normal;
 
@@ -2774,7 +2760,6 @@ input:checked + .toggle-bg {
 body {
   max-width: 1920px;
   overflow-x: hidden;
-  font-family: "UntitledSans-Regular";
 }
 
 h1,
