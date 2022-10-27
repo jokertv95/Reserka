@@ -1219,6 +1219,11 @@ input:checked + .toggle-bg {
   margin-right: 20px;
 }
 
+.mx-\[\] {
+  margin-left: ;
+  margin-right: ;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -1620,6 +1625,10 @@ input:checked + .toggle-bg {
   height: 2.25rem;
 }
 
+.h-\[72px\] {
+  height: 72px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1823,6 +1832,14 @@ input:checked + .toggle-bg {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-\[\] {
+  width: ;
+}
+
+.w-\[72px\] {
+  width: 72px;
 }
 
 .max-w-7xl {
@@ -3711,6 +3728,10 @@ input.invalid {
     height: 350px;
   }
 
+  .md\:h-\[148px\] {
+    height: 148px;
+  }
+
   .md\:w-auto {
     width: auto;
   }
@@ -3941,6 +3962,10 @@ input.invalid {
 
   .md\:w-\[700px\] {
     width: 700px;
+  }
+
+  .md\:w-\[148px\] {
+    width: 148px;
   }
 
   .md\:basis-1\/3 {
