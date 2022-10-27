@@ -1214,6 +1214,11 @@ input:checked + .toggle-bg {
   margin-right: 40px;
 }
 
+.mx-\[20px\] {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
 }
