@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/fontello.css" />
     <link rel="stylesheet" href="css/air-datepicker.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico" />
     <title>All trails</title>
   </head>
   <body>
@@ -453,25 +454,29 @@
 
     <!-- CTA -->
     <section class="mt-[200px] call_to_action">
-      <div class="xl:ml-[240px] flex xl:flex-row flex-col justify-evenly">
+      <div class="flex xl:flex-row flex-col md:justify-evenly w-full">
         <div
-          class="pt-32 xl:pb-96 xl:mr-[190px] pb-[70px] xl:ml-0 lg:ml-[60px] xxl:w-[415px] xl:w-[415px] md:w-[550px] w-[20rem] md:mx-[12px] md:pl-10 px-6"
+          class="pt-32 xl:pb-96 pb-[70px] xl:ml-[180px] xl:mr-[125px] lg:ml-[60px] xxl:w-[415px] xl:w-[415px] md:w-[400px] w-[70%] md:mx-[12px] mx-[24px]"
         >
           <p class="uppercase text-lighttext">Join clinical trial</p>
-          <h3 class="text-[36px] leading-[50px]">
+          <h3
+            class="md:text-[36px] text-[28px] mt-2 md:leading-[50px] leading-[39px]"
+          >
             Fill out the questionnaire and check what clinical trial you qualify
             for
           </h3>
-          <p class="text-[20px] leading-[32px]">
+          <p class="text-[20px] leading-[32px] mt-8">
             Get access to innovative treatment methods and help in the
             development of the future medicine.
           </p>
         </div>
-        <div class="bg-white w-full md:m-1 md:pl-10">
+        <div class="bg-white xl:w-[70%] w-full md:m-1 m-0 md:pl-10">
           <div
             class="xl:pl-10 xl:pr-[350px] lg:pl-[130px] md:mx-[12px] px-6 pt-[70px]"
           >
-            <p class="xl:pt-[50px]">1/6</p>
+            <span class="text-[24px]"
+              >1<span class="text-gray-400">/6</span></span
+            >
             <h3
               class="xl:pt-[32px] xl:text-[48px] lg:text-[48px] md:text-[48px] text-[36px] leading-[62px]"
             >
@@ -536,7 +541,7 @@
                   <label
                     for="bordered-radio-3"
                     class="py-4 ml-2 w-full text-sm font-medium text-gray-900"
-                    ><i class="icon-transgender-alt"></i>Intersex</label
+                    ><i class="icon-transgender-alt black"></i>Intersex</label
                   >
                 </div>
               </div>
@@ -552,7 +557,7 @@
                 <button
                   type="button"
                   data-modal-toggle="authentication-modal"
-                  class="border-2 border-black bg-white text-black px-8 py-4"
+                  class="border border-black bg-white text-black px-8 py-4"
                 >
                   I'd rather not say
                 </button>
@@ -565,21 +570,43 @@
                   <div class="relative p-4 w-full max-w-7xl h-full md:h-auto">
                     <!-- Modal content -->
                     <div
-                      class="relative bg-white rounded-lg shadow dark:bg-gray-700"
+                      class="relative xl:h-[900px] bg-white rounded-lg shadow"
                     >
-                      <form id="regForm" action="">
+                      <!-- Modal header -->
+                      <div class="items-center p-5 rounded-t border-b">
+                        <button
+                          type="button"
+                          class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-block items-center"
+                          data-modal-toggle="authentication-modal"
+                        >
+                          <i class="icon-left-small"></i>
+                          <span>Back to website</span>
+                        </button>
+                      </div>
+
+                      <form
+                        id="regForm"
+                        action=""
+                        class="p-[40px] mx-auto mt-[50px] mb-[100px]"
+                      >
                         <!-- One "tab" for each step in the form: -->
                         <div class="tab">
-                          <h3 class="text-[48px] leading-[62px]">
-                            Date of birth
-                          </h3>
+                          <div class="relative">
+                            <span
+                              class="md:absolute text-[24px] xl:left-[-50px] xl:top-[15px]"
+                              >2<span class="text-gray-400">/6</span></span
+                            >
+                            <h3 class="text-[48px] leading-[62px]">
+                              Date of birth
+                            </h3>
+                          </div>
                           <p class="text-[20px] leading-[32px]">
                             That helps us find the clincal studies for your age
                             group.
                           </p>
                           <div class="relative">
                             <div
-                              class="flex absolute inset-y-0 left-[300px] items-center pl-3 pointer-events-none"
+                              class="flex absolute inset-y-0 md:left-[300px] left-[180px] top-[30px] items-center pl-3 pointer-events-none"
                             >
                               <svg
                                 aria-hidden="true"
@@ -599,15 +626,21 @@
                               type="text"
                               placeholder="MM/DD/YYYY"
                               id="airdatepicker"
-                              class="form-controll w-[350px] rounded-md"
+                              class="form-controll md:w-[350px] w-[230px] mt-[32px] rounded-md"
                             />
                           </div>
                         </div>
 
                         <div class="tab">
-                          <h3 class="text-[48px] leading-[62px]">
-                            Past Medical History
-                          </h3>
+                          <div class="relative">
+                            <span
+                              class="md:absolute text-[24px] xl:left-[-50px] xl:top-[15px]"
+                              >3<span class="text-gray-400">/6</span></span
+                            >
+                            <h3 class="text-[48px] leading-[62px]">
+                              Past Medical History
+                            </h3>
+                          </div>
                           <p class="text-[20px] leading-[32px]">
                             Please list your previous diagnosis, so we can find
                             the relevant studies for you.
@@ -616,22 +649,28 @@
                           <textarea
                             id="medical_history"
                             rows="4"
-                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500"
                             placeholder="ex. allergies, illnesses, surgeries, immunizations"
                           ></textarea>
                         </div>
 
                         <div class="tab">
-                          <h3 class="text-[48px] leading-[62px]">
-                            Smoking habits
-                          </h3>
+                          <div class="relative">
+                            <span
+                              class="md:absolute text-[24px] xl:left-[-50px] xl:top-[15px]"
+                              >4<span class="text-gray-400">/6</span></span
+                            >
+                            <h3 class="text-[48px] leading-[62px]">
+                              Smoking habits
+                            </h3>
+                          </div>
                           <p class="text-[20px] leading-[32px]">
                             Your smoking habits may have an impact on types of
                             trials you can take part in.
                           </p>
                           <div class="flex flex-col gap-4 xl:mb-10 mb-[90px]">
                             <div
-                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] md:w-[350px] w-[270px]"
                             >
                               <input
                                 id="no_smoking"
@@ -647,7 +686,7 @@
                               >
                             </div>
                             <div
-                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] md:w-[350px] w-[270px]"
                             >
                               <input
                                 checked=""
@@ -664,7 +703,7 @@
                               >
                             </div>
                             <div
-                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] md:w-[350px] w-[270px]"
                             >
                               <input
                                 checked=""
@@ -684,16 +723,22 @@
                         </div>
 
                         <div class="tab">
-                          <h3 class="text-[48px] leading-[62px]">
-                            Study length
-                          </h3>
+                          <div class="relative">
+                            <span
+                              class="md:absolute text-[24px] xl:left-[-50px] xl:top-[15px]"
+                              >5<span class="text-gray-400">/6</span></span
+                            >
+                            <h3 class="text-[48px] leading-[62px]">
+                              Study length
+                            </h3>
+                          </div>
                           <p class="text-[20px] leading-[32px]">
                             How long are you willing to participate in the
                             study?
                           </p>
                           <div class="flex flex-col gap-4 xl:mb-10 mb-[90px]">
                             <div
-                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] md:w-[350px] w-[270px]"
                             >
                               <input
                                 id="one_month"
@@ -705,11 +750,11 @@
                               <label
                                 for="one_month"
                                 class="py-4 ml-2 w-full text-sm font-medium text-gray-900"
-                                ><i class="icon-venus"></i>up to 1 month
+                                >up to 1 month
                               </label>
                             </div>
                             <div
-                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] md:w-[350px] w-[270px]"
                             >
                               <input
                                 checked=""
@@ -726,7 +771,7 @@
                               >
                             </div>
                             <div
-                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] w-[20rem]"
+                              class="flex items-center pl-4 rounded border border-black xl:w-[28rem] md:w-[350px] w-[270px]"
                             >
                               <input
                                 checked=""
@@ -746,25 +791,129 @@
                         </div>
 
                         <div class="tab">
-                          <h3 class="text-[48px] leading-[62px]">
-                            Great! Now you can get in touch with study
-                            coordinator.
-                          </h3>
+                          <div class="relative">
+                            <span
+                              class="md:absolute text-[24px] xl:left-[-50px] xl:top-[15px]"
+                              >6<span class="text-gray-400">/6</span></span
+                            >
+                            <h3 class="text-[48px] leading-[62px]">
+                              Great! Now you can get in touch with study
+                              coordinator.
+                            </h3>
+                          </div>
                           <p class="text-[20px] leading-[32px]">
                             These are our top-picks, tailored to the information
                             you provided in the form.
                           </p>
+                          <div class="carousel">
+                            <div class="cta_carousel">
+                              <div
+                                class="bg-lightblue xxl:w-[910px] xl:w-[910px] lg:w-[510px] md:w-[510px] w-[320px] h-fit"
+                              >
+                                <div
+                                  class="lg:px-[60px] md:px-[40px] px-[24px] py-[40px]"
+                                >
+                                  <p class="text-xl">
+                                    Downtown Miami Clinic Center
+                                  </p>
+                                  <h3 class="text-5xl py-2">Diabetes type B</h3>
+                                  <div class="mt-9">
+                                    <div>
+                                      <p class="text-base">Overall criteria</p>
+                                      <p class="text-xl">
+                                        Healthy, non-smoking adults in Miami
+                                      </p>
+                                    </div>
+                                    <div class="mt-4">
+                                      <p class="text-base">Age</p>
+                                      <p class="text-xl">18-60</p>
+                                    </div>
+                                    <div
+                                      class="mt-4 flex xl:flex-row xl:justify-between flex-col"
+                                    >
+                                      <div>
+                                        <p class="text-base">
+                                          Stays + Potential reimbursement
+                                        </p>
+                                        <p class="text-xl">
+                                          1 stay of 6 nights - Up to $3,560
+                                        </p>
+                                      </div>
+                                      <div class="xl:mt-4 mt-[50px]">
+                                        <a
+                                          href="#"
+                                          class="w-fit px-3 py-3 baseline border-2 rounded-none border-black text-base leading-[24px]"
+                                          >Learn more about this study
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Second Element -->
+                              <div
+                                class="bg-lightpurple xxl:w-[910px] xl:w-[910px] lg:w-[510px] md:w-[510px] w-[320px] h-fit"
+                              >
+                                <div
+                                  class="lg:px-[60px] md:px-[40px] px-[24px] py-[40px]"
+                                >
+                                  <p class="text-xl">
+                                    Downtown Miami Clinic Center
+                                  </p>
+                                  <h3 class="text-5xl py-2">Diabetes type B</h3>
+                                  <div class="mt-9">
+                                    <div>
+                                      <p class="text-base">Overall criteria</p>
+                                      <p class="text-xl">
+                                        Healthy, non-smoking adults in Miami
+                                      </p>
+                                    </div>
+                                    <div class="mt-4">
+                                      <p class="text-base">Age</p>
+                                      <p class="text-xl">18-60</p>
+                                    </div>
+                                    <div
+                                      class="mt-4 flex xl:flex-row xl:justify-between flex-col"
+                                    >
+                                      <div>
+                                        <p class="text-base">
+                                          Stays + Potential reimbursement
+                                        </p>
+                                        <p class="text-xl">
+                                          1 stay of 6 nights - Up to $3,560
+                                        </p>
+                                      </div>
+                                      <div class="xl:mt-4 mt-[50px]">
+                                        <a
+                                          href="#"
+                                          class="w-fit px-3 py-3 btn baseline border-2 rounded-none border-black"
+                                          >Learn more about this study
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                           <p class="text-[20px] leading-[32px]">
                             If you need more help feel free to contact with our
                             coordinator about other options
                           </p>
-                          <button>Contact form</button>
+                          <button
+                            class="px-8 py-4 border-[2px] border-black"
+                            type="button"
+                          >
+                            <a href="contact-us.html">Contact form</a>
+                          </button>
                         </div>
 
-                        <div class="overflow-auto mt-[20px]">
+                        <div
+                          class="overflow-auto lg:mt-[280px] md:mt-[50px] mt-[48px]"
+                        >
                           <div float-left>
                             <button
-                              class="text-black px-8 py-4"
+                              class="text-black hidden border border-black px-4 py-4"
                               type="button"
                               id="prevBtn"
                               onclick="nextPrev(-1)"
@@ -772,7 +921,7 @@
                               Previous
                             </button>
                             <button
-                              class="bg-black text-white px-8 py-4"
+                              class="bg-black border-[1px] border-black text-white px-8 py-4"
                               type="button"
                               id="nextBtn"
                               onclick="nextPrev(1)"
@@ -784,6 +933,7 @@
 
                         <!-- Circles which indicates the steps of the form: -->
                         <div style="text-align: center; margin-top: 40px">
+                          <span class="step"></span>
                           <span class="step"></span>
                           <span class="step"></span>
                           <span class="step"></span>
