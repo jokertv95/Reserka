@@ -1,22 +1,22 @@
-const slider = tns({
+const slider_2 = tns({
   container: ".cta_carousel",
-  slideBy: "page",
+  slideBy: "1",
   controls: false,
   touch: true,
+  mouseDrag: true,
+  center: true,
   items: "1",
-  autoplay: true,
+  autoWidth: "1",
+  autoplay: false,
   responsive: {
     425: {
       items: 1,
-      fixedWidth: 300,
     },
     768: {
       items: 1,
-      fixedWidth: 534,
     },
     1000: {
-      items: 1,
-      fixedWidth: 534,
+      items: 2,
     },
   },
 });

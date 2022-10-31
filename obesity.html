@@ -185,57 +185,55 @@
       </nav>
     </header>
 
-    <div
-      class="w-full md:h-[800px] sm:h-[800px] h-[800px] absolute -z-10 top-0 bg-no-repeat bg-cover background overflow-hidden"
-    ></div>
-
-    <!-- HERO -->
-    <section
-      id="hero"
-      class="container w-[300px] md:w-[1000px] h-[500px] ml-2 mt-36 sm:mt-36 md:mt-56 sm:mx-8 md:mx-32"
-    >
-      <!-- FLEX CONTAINER -->
-      <div class="container flex flex-col z-10">
-        <div class="">
-          <a href="#"
-            ><img
-              src="img/left-arrow.svg"
-              alt="Back arrow"
-              class="hidden md:inline-block w-[54px] h-[54px] mb-16"
-          /></a>
-        </div>
-        <div class="w-[200px]">
-          <h1 class="text-[80px]">Obesity</h1>
-          <p class="text-xl">
-            Trial is aimed to help problems with extra weight gaining and water
-            retention in the body.
-          </p>
-        </div>
-        <div
-          class="flex md:flex-row flex-col mt-10 gap-10 md:justify-between align-sub"
-        >
-          <div class="flex md:flex-row sm:flex-col flex-col gap-5 md:gap-10">
-            <div>
-              <p>Age</p>
-              <p>18-55</p>
-            </div>
-            <div>
-              <p>Sex</p>
-              <p>Males & Females</p>
-            </div>
-            <div>
-              <p>Smoking Habit</p>
-              <p>N/A</p>
-            </div>
-            <div>
-              <p>Status</p>
-              <p>Ongoing</p>
-            </div>
+    <!-- Hero SECTION -->
+    <section class="call_to_action relative h-[85vh]">
+      <div
+        class="container z-10 absolute inset-x-0 bottom-[40px] xxl:pl-44 xl:pl-24 lg:pl-14 md:pl-10 px-6"
+      >
+        <div class="container flex flex-col">
+          <div class="mb-[56px]">
+            <a href="all-trials.html"
+              ><img
+                src="img/left-arrow.svg"
+                alt="Back arrow"
+                class="hidden md:inline-block w-[54px] h-[54px] mb-16"
+            /></a>
           </div>
-          <div>
-            <a href="#" class="border-black border-2 px-8 py-4 inline-block"
-              >Schedule on-site meeting</a
-            >
+          <div class="w-[200px]">
+            <h1 class="text-[80px]">Obesity</h1>
+            <p class="text-xl">
+              Trial is aimed to help problems with extra weight gaining and
+              water retention in the body.
+            </p>
+          </div>
+          <div
+            class="flex lg:flex-row flex-col mt-10 gap-10 md:justify-between align-sub"
+          >
+            <div class="flex md:flex-row sm:flex-col flex-col gap-5 md:gap-10">
+              <div>
+                <p>Age</p>
+                <p>18-55</p>
+              </div>
+              <div>
+                <p>Sex</p>
+                <p>Males & Females</p>
+              </div>
+              <div>
+                <p>Smoking Habit</p>
+                <p>N/A</p>
+              </div>
+              <div>
+                <p>Status</p>
+                <p>Ongoing</p>
+              </div>
+            </div>
+            <div>
+              <a
+                href="coordinator.html"
+                class="border-black border-2 px-8 py-4 inline-block"
+                >Schedule on-site meeting <i class="icon-right"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
@@ -289,11 +287,9 @@
     <!-- FAQ -->
     <section class="mt-[200px]">
       <div
-        class="container xxl:ml-[380px] xxl:mr-[580px] xl:ml-[250px] xl:mr-[230px] lg:ml-[60px] lg:mr-[275px] md:ml-[40px] md:mr-[130px]"
+        class="container xxl:ml-[380px] xxl:mr-[580px] xl:ml-[250px] xl:mr-[230px] lg:ml-[60px] lg:mr-[275px] md:ml-[40px] md:mr-[130px] mx-6"
       >
-        <div
-          class="xxl:w-[970px] xl:w-[970px] lg:w-[670px] md:w-[665px] w-[330px] px-6"
-        >
+        <div class="xxl:w-[970px] xl:w-[970px] lg:w-[670px] md:w-[665px] w-fit">
           <p class="uppercase text-black text-base leading-[22px]">Faq</p>
           <h3
             class="xxl:text-[64px] xl:text-[64px] xl:leading-[83px] lg:text-[48px] md:text-[48px] md:leading-[62px] text-[36px] leading-[50px]"
@@ -302,18 +298,18 @@
           </h3>
         </div>
         <div
-          class="xxl:w-[970px] xl:w-[970px] lg:w-[670px] md:w-[665px] w-[330px] px-6 mt-[80px]"
+          class="xxl:w-[970px] xl:w-[970px] lg:w-[670px] md:w-[665px] w-[330px] mt-[80px]"
         >
           <div
             id="accordion-flush"
             data-accordion="collapse"
-            data-active-classes="bg-white text-gray-900"
-            data-inactive-classes="text-gray-500"
+            data-active-classes="bg-white border-none"
+            data-inactive-classes="text-black"
           >
             <h2 id="accordion-flush-heading-1">
               <button
                 type="button"
-                class="flex items-center justify-between w-full py-5 font-medium text-left border-b border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 text-gray-900 dark:text-white"
+                class="flex items-center justify-between w-5/12 py-5 font-medium text-left bg-white text-gray-900 border-b border-gray-600"
                 data-accordion-target="#accordion-flush-body-1"
                 aria-expanded="true"
                 aria-controls="accordion-flush-body-1"
@@ -329,11 +325,9 @@
               class=""
               aria-labelledby="accordion-flush-heading-1"
             >
-              <div
-                class="py-5 font-light border-b border-gray-200 dark:border-gray-700"
-              >
+              <div class="py-5 font-light">
                 <p
-                  class="mb-2 text-gray-800 md:text-[20px] text-[16px] md:leading-[32px] leading-[26px]"
+                  class="xl:w-[500px] md:w-[624px] w-[284px] mb-[81px] pl-[42px] border-l text-gray-800 md:text-[20px] text-[16px] md:leading-[32px] leading-[26px]"
                 >
                   Clinical trials are experiments or observations done in
                   clinical research. A clinical trial could involve new drugs,
@@ -345,7 +339,7 @@
             <h2 id="accordion-flush-heading-2">
               <button
                 type="button"
-                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-900 border-b border-gray-200"
                 data-accordion-target="#accordion-flush-body-2"
                 aria-expanded="false"
                 aria-controls="accordion-flush-body-2"
@@ -361,11 +355,9 @@
               class="hidden"
               aria-labelledby="accordion-flush-heading-2"
             >
-              <div
-                class="py-5 font-light border-b border-gray-200 dark:border-gray-700"
-              >
+              <div class="py-5 font-light">
                 <p
-                  class="mb-2 text-gray-800 md:text-[20px] text-[16px] md:leading-[32px] leading-[26px]"
+                  class="xl:w-[500px] md:w-[624px] w-[284px] mb-[81px] pl-[42px] border-l text-gray-800 md:text-[20px] text-[16px] md:leading-[32px] leading-[26px]"
                 >
                   Your eligibility may be based on your age, gender, overall
                   health, type and stage of a disease, treatment history, and
@@ -376,7 +368,7 @@
             <h2 id="accordion-flush-heading-3">
               <button
                 type="button"
-                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-900 border-b border-gray-200"
                 data-accordion-target="#accordion-flush-body-3"
                 aria-expanded="false"
                 aria-controls="accordion-flush-body-3"
@@ -393,11 +385,9 @@
               class="hidden"
               aria-labelledby="accordion-flush-heading-3"
             >
-              <div
-                class="py-5 font-light border-b border-gray-200 dark:border-gray-700"
-              >
+              <div class="py-5 font-light">
                 <p
-                  class="mb-2 text-gray-800 md:text-[20px] text-[16px] md:leading-[32px] leading-[26px]"
+                  class="xl:w-[500px] md:w-[624px] w-[284px] mb-[81px] pl-[42px] border-l text-gray-800 md:text-[20px] text-[16px] md:leading-[32px] leading-[26px]"
                 >
                   When enrolled in a clinical trial, you not only gain access to
                   cutting-edge & expert care, but you are participating in a
@@ -409,7 +399,7 @@
             <h2 id="accordion-flush-heading-4">
               <button
                 type="button"
-                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-900 border-b border-gray-200"
                 data-accordion-target="#accordion-flush-body-4"
                 aria-expanded="false"
                 aria-controls="accordion-flush-body-4"
@@ -425,11 +415,9 @@
               class="hidden"
               aria-labelledby="accordion-flush-heading-4"
             >
-              <div
-                class="py-5 font-light border-b border-gray-200 dark:border-gray-700"
-              >
+              <div class="py-5 font-light">
                 <p
-                  class="mb-2 text-gray-800 md:text-[20px] text-[16px] md:leading-[32px] leading-[26px]"
+                  class="xl:w-[500px] md:w-[624px] w-[284px] mb-[81px] pl-[42px] border-l text-gray-800 md:text-[20px] text-[16px] md:leading-[32px] leading-[26px]"
                 >
                   You will be monitored closely by top physicians, nurses,
                   pharmacist’s as well as researchers. Should the medical
@@ -443,7 +431,7 @@
             <h2 id="accordion-flush-heading-5">
               <button
                 type="button"
-                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-900 border-b border-gray-200"
                 data-accordion-target="#accordion-flush-body-5"
                 aria-expanded="false"
                 aria-controls="accordion-flush-body-5"
@@ -459,26 +447,24 @@
               class="hidden"
               aria-labelledby="accordion-flush-heading-5"
             >
-              <div
-                class="py-5 font-light border-b border-gray-200 dark:border-gray-700"
-              >
+              <div class="py-5 font-light border-b border-gray-200">
                 <span>
                   <p>Phase 1</p>
-                  <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                  <ul class="pl-5 text-gray-800 list-disc dark:text-gray-400">
                     <li>Test drugs on healthy individuals</li>
                     <li>Test for safety dosage and side effects</li>
                   </ul>
                 </span>
                 <span>
                   <p>Phase 2</p>
-                  <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                  <ul class="pl-5 text-gray-800 list-disc dark:text-gray-400">
                     <li>Test on larger group of effected individuals</li>
                     <li>Test for efficiacy and side effects</li>
                   </ul>
                 </span>
                 <span>
                   <p>Phase 3</p>
-                  <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                  <ul class="pl-5 text-gray-800 list-disc dark:text-gray-400">
                     <li>Test on new and wider demographics</li>
                     <li>
                       Test for long term effectiveness and comparisons with
@@ -488,7 +474,7 @@
                 </span>
                 <span>
                   <p>Phase FDA Approval</p>
-                  <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                  <ul class="pl-5 text-gray-800 list-disc dark:text-gray-400">
                     <li>
                       Treatment determined effective and safe for public use
                     </li>
@@ -496,7 +482,7 @@
                 </span>
                 <span>
                   <p>Phase 5</p>
-                  <ul class="pl-5 text-gray-500 list-disc dark:text-gray-400">
+                  <ul class="pl-5 text-gray-800 list-disc dark:text-gray-400">
                     <li>Continues to test for effectiveness and safety</li>
                     <li>Can be taken of the market if necessary</li>
                   </ul>
@@ -507,7 +493,7 @@
             <h2 id="accordion-flush-heading-6">
               <button
                 type="button"
-                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-500 border-b border-gray-200 dark:border-gray-700 dark:text-gray-400"
+                class="flex items-center justify-between w-full py-5 font-medium text-left text-gray-900 border-b border-gray-200"
                 data-accordion-target="#accordion-flush-body-6"
                 aria-expanded="false"
                 aria-controls="accordion-flush-body-6"
@@ -524,11 +510,9 @@
               class="hidden"
               aria-labelledby="accordion-flush-heading-6"
             >
-              <div
-                class="py-5 font-light border-b border-gray-200 dark:border-gray-700"
-              >
+              <div class="py-5 font-light">
                 <p
-                  class="mb-2 text-gray-800 md:text-[20px] text-[16px] md:leading-[32px] leading-[26px]"
+                  class="xl:w-[500px] md:w-[624px] w-[284px] mb-[81px] pl-[42px] border-l text-gray-800 md:text-[20px] text-[16px] md:leading-[32px] leading-[26px]"
                 >
                   You can always talk to our clinical coordinators or physicians
                   as well as the principal investigator of the study to learn
@@ -546,54 +530,79 @@
     </section>
 
     <!-- Schedule -->
-    <section id="scheduleObesity">
-      <div class="container ml-4 sm:mx-10 md:mx-auto flex flex-row">
-        <div class="w-[350px] md:w-[600px]">
-          <h3 class="text-3xl md:text-4xl">Schedule a meeting in our clinic</h3>
-          <p class="text-xl mt-4">
+    <section class="mt-[200px]">
+      <div class="relative lg:pb-[100px] md:pb-[300px]">
+        <div
+          class="lg:w-[43rem] md:w-[43rem] w-[20rem] lg:mx-[100px] md:ml-[44px] md:mr-[114px] mx-[24px]"
+        >
+          <h3
+            class="lg:text-5xl md:text-5xl text-4xl lg:leading-[62px] md:leading-[62px] leading-[47px] mb-[16px]"
+          >
+            Schedule a meeting in our clinic
+          </h3>
+          <p class="lg:text-xl md:text-xl text-base leading-[30px]">
             Provide your personal data so that we can contact you about the
             appointment. Each trial starts with a medical exam.
           </p>
-          <div class="mt-14">
-            <label for="fullname">Full name</label>
-            <div class="w-[250px]">
-              <input
-                id="fullname"
-                type="text"
-                class="w-fit border-gray-300 rounded-lg shadow-md p-2"
-                placeholder="Robert Johnson"
-              />
-            </div>
+          <div class="mt-[32px] lg:w-[28rem] md:w-[28rem] w-[20rem]">
+            <form>
+              <div class="mb-6">
+                <label
+                  for="fullname"
+                  class="block mb-2 text-sm font-medium text-gray-900"
+                  >Full name</label
+                >
+                <input
+                  type="text"
+                  id="fullname"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  placeholder="Robert Johnson"
+                  required=""
+                />
+              </div>
+              <div class="mb-6">
+                <label
+                  for="phone"
+                  class="block mb-2 text-sm font-medium text-gray-900"
+                  >Phone number</label
+                >
+                <input
+                  type="tel"
+                  id="phone"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  placeholder="+1 355-340-4498"
+                  required=""
+                />
+              </div>
+              <div class="mb-6">
+                <label
+                  for="email"
+                  class="block mb-2 text-sm font-medium text-gray-900"
+                  >Your email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
+                  placeholder="r.johnson@gmail.com"
+                  required=""
+                />
+              </div>
+
+              <button
+                type="submit"
+                class="text-white bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm w-full sm:w-auto px-5 py-2.5 text-center"
+              >
+                Submit
+              </button>
+            </form>
           </div>
-          <div class="mt-4">
-            <label for="phoneNumber">Phone number</label>
-            <div class="w-[250px]">
-              <input
-                id="phoneNumber"
-                type="tel"
-                class="w-fit border-gray-300 rounded-lg shadow-md p-2 focus:border-lightgreen"
-                placeholder="+1 355-340-4498"
-              />
-            </div>
-          </div>
-          <div class="mt-4">
-            <label for="email">Email adress</label>
-            <div class="w-[250px]">
-              <input
-                id="email"
-                type="email"
-                class="w-fit border-gray-300 rounded-lg shadow-md p-2 focus:border-green-500"
-                placeholder="you@example.com"
-              />
-            </div>
-          </div>
-          <a href="#" class="inline-block bg-black px-6 py-2 text-white mt-6"
-            >Send</a
-          >
         </div>
-        <div class="hidden md:inline-block md:ml-60 mt-32">
-          <img src="img/survey_1.svg" alt="" />
-        </div>
+        <img
+          class="absolute lg:top-[120px] lg:left-[1100px] md:left-[500px] lg:w-[296px] lg:h-[382px] md:w-[208px] md:h-[270px] md:inline-block hidden"
+          src="img/survey_1.svg"
+          alt=""
+        />
       </div>
     </section>
 
