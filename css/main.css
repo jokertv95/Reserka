@@ -1153,8 +1153,8 @@ input:checked + .toggle-bg {
   left: 200px;
 }
 
-.left-\[150px\] {
-  left: 150px;
+.left-\[135px\] {
+  left: 135px;
 }
 
 .top-\[230px\] {
@@ -1165,16 +1165,16 @@ input:checked + .toggle-bg {
   top: 150px;
 }
 
-.right-\[250px\] {
-  right: 250px;
+.right-\[200px\] {
+  right: 200px;
 }
 
 .left-\[220px\] {
   left: 220px;
 }
 
-.top-\[170px\] {
-  top: 170px;
+.top-\[165px\] {
+  top: 165px;
 }
 
 .bottom-\[40px\] {
@@ -1797,10 +1797,6 @@ input:checked + .toggle-bg {
   width: 80px;
 }
 
-.w-\[300px\] {
-  width: 300px;
-}
-
 .w-\[118px\] {
   width: 118px;
 }
@@ -1813,12 +1809,20 @@ input:checked + .toggle-bg {
   width: 202px;
 }
 
+.w-\[90wh\] {
+  width: 90wh;
+}
+
 .w-5\/12 {
   width: 41.666667%;
 }
 
 .w-\[284px\] {
   width: 284px;
+}
+
+.w-\[300px\] {
+  width: 300px;
 }
 
 .w-\[54px\] {
@@ -1899,6 +1903,10 @@ input:checked + .toggle-bg {
 
 .w-1\/2 {
   width: 50%;
+}
+
+.w-\[240px\] {
+  width: 240px;
 }
 
 .max-w-7xl {
@@ -2762,6 +2770,10 @@ input:checked + .toggle-bg {
   line-height: 2.25rem;
 }
 
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
 .text-gray-700 {
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -2900,7 +2912,7 @@ input:checked + .toggle-bg {
 @font-face {
   font-family: "Signifier-Regular";
 
-  src: url(/font/Signifier-Regular.otf);
+  src: url(/font/test-signifier-regular.woff2);
 
   font-weight: normal;
 
@@ -2910,7 +2922,7 @@ input:checked + .toggle-bg {
 @font-face {
   font-family: "UntitledSans-Regular";
 
-  src: url(/font/UntitledSans-Regular.otf);
+  src: url(/font/test-untitled-sans-regular.woff2);
 
   font-weight: normal;
 
@@ -2919,12 +2931,12 @@ input:checked + .toggle-bg {
 
 * {
   box-sizing: border-box;
-  font-family: "UntitledSans-Regular";
 }
 
 body {
   min-width: 100vw;
   overflow-x: hidden;
+  font-family: "UntitledSans-Regular";
 }
 
 h1,
@@ -2987,7 +2999,7 @@ h6 {
 /* HERO */
 
 .hero_section {
-  background: url(/img/Gradient-BG-Warm.jpg);
+  background: url(../img/Gradient-BG-Warm.jpg);
   height: 90vh;
   width: 100%;
   background-size: cover;
@@ -3007,10 +3019,10 @@ h6 {
 
 .call_to_action {
   background: linear-gradient(
-    22deg,
-    rgba(229, 243, 255, 1) 0%,
-    rgba(249, 222, 219, 1) 45%,
-    rgba(162, 209, 173, 1) 74%
+    45deg,
+    rgba(229, 243, 255, 1) 10%,
+    rgba(162, 209, 173, 1) 23%,
+    rgba(249, 222, 219, 1) 70%
   );
 }
 
@@ -3724,8 +3736,8 @@ input.invalid {
     height: 148px;
   }
 
-  .md\:h-\[162px\] {
-    height: 162px;
+  .md\:h-\[142px\] {
+    height: 142px;
   }
 
   .md\:h-\[182px\] {
@@ -3928,16 +3940,16 @@ input.invalid {
     width: 440px;
   }
 
-  .md\:w-\[126px\] {
-    width: 126px;
+  .md\:w-\[106px\] {
+    width: 106px;
   }
 
   .md\:w-\[170px\] {
     width: 170px;
   }
 
-  .md\:w-\[106px\] {
-    width: 106px;
+  .md\:w-\[126px\] {
+    width: 126px;
   }
 
   .md\:w-\[80px\] {
@@ -4022,6 +4034,11 @@ input.invalid {
 
   .md\:w-\[700px\] {
     width: 700px;
+  }
+
+  .md\:w-fit {
+    width: -moz-fit-content;
+    width: fit-content;
   }
 
   .md\:basis-1\/3 {
@@ -4763,6 +4780,10 @@ input.invalid {
     flex-wrap: nowrap;
   }
 
+  .lg\:items-start {
+    align-items: flex-start;
+  }
+
   .lg\:justify-start {
     justify-content: flex-start;
   }
@@ -4941,8 +4962,8 @@ input.invalid {
     top: 0px;
   }
 
-  .xl\:top-\[-110px\] {
-    top: -110px;
+  .xl\:top-\[-90px\] {
+    top: -90px;
   }
 
   .xl\:left-\[490px\] {
@@ -5034,6 +5055,10 @@ input.invalid {
     margin-left: 1.5rem;
   }
 
+  .xl\:ml-\[160px\] {
+    margin-left: 160px;
+  }
+
   .xl\:inline-block {
     display: inline-block;
   }
@@ -5046,8 +5071,8 @@ input.invalid {
     height: 900px;
   }
 
-  .xl\:h-\[260px\] {
-    height: 260px;
+  .xl\:h-\[200px\] {
+    height: 200px;
   }
 
   .xl\:h-\[248px\] {
@@ -5126,8 +5151,8 @@ input.invalid {
     width: 796px;
   }
 
-  .xl\:w-\[200px\] {
-    width: 200px;
+  .xl\:w-\[180px\] {
+    width: 180px;
   }
 
   .xl\:w-\[292px\] {
@@ -5314,8 +5339,8 @@ input.invalid {
     top: -100px;
   }
 
-  .xxl\:left-\[500px\] {
-    left: 500px;
+  .xxl\:left-\[550px\] {
+    left: 550px;
   }
 
   .xxl\:top-\[-60px\] {
